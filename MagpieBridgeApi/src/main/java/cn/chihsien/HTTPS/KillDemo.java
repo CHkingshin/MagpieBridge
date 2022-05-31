@@ -30,14 +30,24 @@ public class KillDemo {
             final Long userId = Long.valueOf(i);
             Future<Result> future = executorService.submit(() -> {
                 countDownLatch.countDown();
+                countDownLatch.await(1000,TimeUnit.SECONDS);
                 return killDemo.operate(new UserRequest(orderId, userId, 1));
             });
             futureList.add(future);
         }
 
-        futureList.forEach(future -> {
+       /* futureList.forEach(future -> {
             try {
                 Result result = future.get(300, TimeUnit.MILLISECONDS);
+                System.out.println(Thread.currentThread().getName() + ":客户端请求响应:" + result);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });*/
+        //哪个结果先到先处理哪个
+        futureList.forEach(completableFuture -> {
+            try {
+                Result result = completableFuture.get(300, TimeUnit.MILLISECONDS);
                 System.out.println(Thread.currentThread().getName() + ":客户端请求响应:" + result);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -46,24 +56,26 @@ public class KillDemo {
     }
 
     /**
-     * 扣除库存的方法
+     * 用户扣除库存的方法
      */
     public Result operate(UserRequest userRequest) throws InterruptedException {
         // TODO 阈值判断
         // TODO 队列的创建
         RequestPromise requestPromise = new RequestPromise(userRequest);
-        boolean enqueueSuccess = queue.offer(requestPromise, 100, TimeUnit.MILLISECONDS);
-        if (! enqueueSuccess) {
-            return new Result(false, "系统繁忙");
-        }
         synchronized (requestPromise) {
+            boolean enqueueSuccess = queue.offer(requestPromise, 100, TimeUnit.MILLISECONDS);
+            if (! enqueueSuccess) {
+                return new Result(false, "系统繁忙");
+            }
             try {
                 requestPromise.wait(200);
+                //如果为空 则等待时间结束
                 if (requestPromise.getResult() == null) {
                     return new Result(false, "等待超时");
                 }
             } catch (InterruptedException e) {
-                return new Result(false, "被中断");
+                e.printStackTrace();
+                //return new Result(false, "被中断");
             }
         }
         return requestPromise.getResult();
@@ -80,8 +92,9 @@ public class KillDemo {
                         e.printStackTrace();
                     }
                 }
-
-                while (queue.peek() != null) {
+                //获取队列长度 来判断取多少次 避免OOM
+                int batchSize = queue.size();
+                for (int i = 0; i < batchSize; i++) {
                     list.add(queue.poll());
                 }
 
