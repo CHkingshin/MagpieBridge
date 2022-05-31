@@ -44,7 +44,7 @@ public class KillDemo {
                 e.printStackTrace();
             }
         });*/
-        //哪个结果先到先处理哪个
+        //换为completableFuture 哪个结果先到先处理哪个
         futureList.forEach(completableFuture -> {
             try {
                 Result result = completableFuture.get(300, TimeUnit.MILLISECONDS);
@@ -92,6 +92,10 @@ public class KillDemo {
                         e.printStackTrace();
                     }
                 }
+                /*TODO 从队列中取数据的时候加了batchSize，并且循环次数为batchSize 往list里加数据，
+                   但是如果请求量不大的时候，队列里的数据数量小于batchSize，
+                   这样list里会加了一些null，后面没有做判断
+                */
                 //获取队列长度 来判断取多少次 避免OOM
                 int batchSize = queue.size();
                 for (int i = 0; i < batchSize; i++) {
