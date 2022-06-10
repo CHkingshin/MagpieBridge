@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @describe
- * @auther chihsiencheng
+ * @auther CHkingshin
  */
 @RestController
 public class GoodController {
