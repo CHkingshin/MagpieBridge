@@ -12,6 +12,7 @@
     <module>cloudalibaba-provider-payment9001</module>
       <module>cloudalibaba-consumer-nacos-order83</module>
       <module>cloudalibaba-config-nacos-client3377</module>
+      <module>cloudalibaba-gateway-gateway9527</module>
   </modules>
 
   <name>cloudalibaba2022</name>
