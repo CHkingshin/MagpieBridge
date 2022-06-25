@@ -14,6 +14,9 @@
       <module>cloudalibaba-config-nacos-client3377</module>
       <module>cloudalibaba-gateway-gateway9527</module>
       <module>cloudalibaba-sentinel-service8401</module>
+      <module>cloudalibaba-seata-order-8881</module>
+      <module>cloudalibaba-seata-stock-8882</module>
+    <module>cloudalibaba-nacos2-18089</module>
   </modules>
 
   <name>cloudalibaba2022</name>
@@ -38,21 +41,21 @@
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.3.6.RELEASE</version>
+        <version>2.3.12.RELEASE</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>Hoxton.SR9</version>
+        <version>Hoxton.SR12</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.alibaba.cloud</groupId>
         <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-        <version>2.2.6.RELEASE</version>
+        <version>2.2.8.RELEASE</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -89,14 +92,7 @@
         <optional>true</optional>
       </dependency>
 
-      <!--spring cloud alibaba 2.2.6.RELEASE-->
-      <dependency>
-        <groupId>com.alibaba.cloud</groupId>
-        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-        <version>2.2.6.RELEASE</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
+
 
 
     </dependencies>
