@@ -5,7 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.chihsien.service</groupId>
   <artifactId>service</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>service-order</module>
+  </modules>
   <name>service</name>
 
 
