@@ -10,7 +10,7 @@
   <modules>
     <module>service-order</module>
     <module>common</module>
-      <module>model</module>
+    <module>model</module>
   </modules>
   <name>service</name>
 

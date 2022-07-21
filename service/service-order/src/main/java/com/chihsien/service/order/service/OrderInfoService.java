@@ -1,10 +1,11 @@
 package com.chihsien.service.order.service;
 
 
-import com.atguigu.ggkt.model.order.OrderInfo;
-import com.atguigu.ggkt.vo.order.OrderInfoQueryVo;
+
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.chihsien.model.model.order.OrderInfo;
+import com.chihsien.model.vo.order.OrderInfoQueryVo;
 
 import java.util.Map;
 

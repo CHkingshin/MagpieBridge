@@ -1,10 +1,11 @@
 package com.chihsien.service.order.service.impl;
 
 
-import com.atguigu.ggkt.model.order.OrderDetail;
-import com.atguigu.ggkt.order.mapper.OrderDetailMapper;
-import com.atguigu.ggkt.order.service.OrderDetailService;
+
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.chihsien.model.model.order.OrderDetail;
+import com.chihsien.service.order.mapper.OrderDetailMapper;
+import com.chihsien.service.order.service.OrderDetailService;
 import org.springframework.stereotype.Service;
 
 /**

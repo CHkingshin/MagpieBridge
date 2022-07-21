@@ -1,15 +1,16 @@
 package com.chihsien.service.order.service.impl;
 
 
-import com.atguigu.ggkt.model.order.OrderDetail;
-import com.atguigu.ggkt.model.order.OrderInfo;
-import com.atguigu.ggkt.order.mapper.OrderInfoMapper;
-import com.atguigu.ggkt.order.service.OrderDetailService;
-import com.atguigu.ggkt.order.service.OrderInfoService;
-import com.atguigu.ggkt.vo.order.OrderInfoQueryVo;
+
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.chihsien.model.model.order.OrderDetail;
+import com.chihsien.model.model.order.OrderInfo;
+import com.chihsien.model.vo.order.OrderInfoQueryVo;
+import com.chihsien.service.order.mapper.OrderInfoMapper;
+import com.chihsien.service.order.service.OrderDetailService;
+import com.chihsien.service.order.service.OrderInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
