@@ -1,8 +1,9 @@
 package com.chihsien.service.order.mapper;
 
 
-import com.atguigu.ggkt.model.order.OrderInfo;
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.chihsien.model.model.order.OrderInfo;
 
 /**
  * <p>
