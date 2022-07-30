@@ -56,6 +56,18 @@ public class OrderInfoController {
         Map<String,Object> map = orderInfoService.findPageOrderInfo(pageParam, orderInfoQueryVo);
         return Result.ok(map);
     }
-
+    @GetMapping("{pagelist}/{limit}")
+    public Result indexPage(
+            @ApiParam(name = "page", value = "当前页码", required = true)
+            @PathVariable Long page,
+            @ApiParam(name = "limit", value = "每页记录数", required = true)
+            @PathVariable Long limit,
+            @ApiParam(name = "orderInfoVo", value = "查询对象", required = false)
+            OrderInfoQueryVo orderInfoQueryVo) {
+        Page<OrderInfo> pageParam = new Page<>(page, limit);
+        //两表联查 封装为map
+        Map<String,Object> map = orderInfoService.findPageOrderInfo(pageParam, orderInfoQueryVo);
+        return Result.ok(map);
+    }
 }
 

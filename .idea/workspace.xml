@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="" />
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="redis fix">
+      <change afterPath="$PROJECT_DIR$/redis-demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis-demo/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis-demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis-demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis-demo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis-demo/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis-demo/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/common/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/model/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud2022/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud2022/cloud-api-commons/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud2022/cloud-consumer-feign-order80/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud2022/cloud-consumer-order80/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud2022/cloud-eureka-server7001/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud2022/cloud-provider-payment8001/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba2022/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba2022/cloudalibaba-consumer-nacos-order83/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba2022/cloudalibaba-nacos2-18089/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba2022/cloudalibaba-provider-payment9001/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disruptorApi/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disruptorApi/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disruptorApi/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disruptorApi/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/disruptorApi/mvnw.cmd" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -16,25 +58,158 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\ServiceCore\LocalRepository" />
-        <option name="mavenHome" value="E:\ServiceCore\Maven\apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="E:\ServiceCore\Maven\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="localRepository" value="E:\ServiceCore\Repository\repository_boot" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../ServiceCore/Maven/apache-maven-3.8.3" />
+        <option name="userSettingsFile" value="E:\ServiceCore\Maven\apache-maven-3.8.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
   <component name="ProjectId" id="29l6rhiG9bbH1fdXTGwqHzEt04Y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "E:/SourceTreeRepository/github/MagpieBridge",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "2aa6d4ef270bb914ccf670e00fbe0647"
   }
 }]]></component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\test\java\com\chihsien\redis" />
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\main\resources" />
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\main\java\com\chihsien\redis" />
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\service\model\src\test\java\com\chihsien\model" />
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\service\common\src\main\java\com\chihsien\common" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.chihsien.redis" />
+      <recent name="cn.chihsien.redis" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.chihsien.service.order" />
+      <recent name="com.chihsien.service.order.controller" />
+      <recent name="com.chihsien.service.order.config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.RedisDemoApplicationTests.testSaveUser (1)">
+    <configuration name="RedisDemoApplicationTests.testSaveUser (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="redis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chihsien.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chihsien.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.chihsien.redis.RedisDemoApplicationTests" />
+      <option name="METHOD_NAME" value="testSaveUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisDemoApplicationTests.testSaveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jediscloud" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.chihsien.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.chihsien.redis" />
+      <option name="MAIN_CLASS_NAME" value="cn.chihsien.redis.RedisDemoApplicationTests" />
+      <option name="METHOD_NAME" value="testSaveUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisDemoApplicationTests.testString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="redis-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chihsien.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chihsien.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.chihsien.redis.RedisDemoApplicationTests" />
+      <option name="METHOD_NAME" value="testString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="disruptor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MpDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="MP_Demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.mp_demo.MpDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisDemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="redis-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chihsien.redis.RedisDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jediscloud" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.redis.RedisDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chihsien.service.order.ServiceOrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RedisDemoApplicationTests.testSaveUser (1)" />
+        <item itemvalue="JUnit.RedisDemoApplicationTests.testString" />
+        <item itemvalue="JUnit.RedisDemoApplicationTests.testSaveUser" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -44,10 +219,101 @@
       <option name="presentableId" value="Default" />
       <updated>1653675528920</updated>
       <workItem from="1653675531208" duration="11000" />
+      <workItem from="1658348378733" duration="2094000" />
+      <workItem from="1658387619389" duration="2113000" />
+      <workItem from="1658390366486" duration="1475000" />
+      <workItem from="1658393679043" duration="4226000" />
+      <workItem from="1658447125792" duration="1471000" />
+      <workItem from="1658448771908" duration="45000" />
+      <workItem from="1658767279445" duration="1286000" />
+      <workItem from="1658899071628" duration="6000" />
+      <workItem from="1659188212119" duration="53000" />
     </task>
+    <task id="LOCAL-00001" summary="jedis bug fix">
+      <created>1658348507774</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658348507774</updated>
+    </task>
+    <task id="LOCAL-00002" summary="jedis bug fix">
+      <created>1658349134259</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658349134259</updated>
+    </task>
+    <task id="LOCAL-00003" summary="jedis bug fix02">
+      <created>1658351386193</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658351386193</updated>
+    </task>
+    <task id="LOCAL-00004" summary="pojo and frmark down">
+      <created>1658390654920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658390654920</updated>
+    </task>
+    <task id="LOCAL-00005" summary="pojo fix">
+      <created>1658390827111</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658390827111</updated>
+    </task>
+    <task id="LOCAL-00006" summary="pojo fix">
+      <created>1658391752827</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658391752827</updated>
+    </task>
+    <task id="LOCAL-00007" summary="redis start">
+      <created>1658397938094</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658397938094</updated>
+    </task>
+    <task id="LOCAL-00008" summary="redis fix">
+      <created>1658447741613</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658447741613</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="jedis bug fix" />
+    <MESSAGE value="jedis bug fix02" />
+    <MESSAGE value="pojo and frmark down" />
+    <MESSAGE value="pojo fix" />
+    <MESSAGE value="redis start" />
+    <MESSAGE value="redis fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis fix" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

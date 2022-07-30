@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/../../../ServiceCore/Repository/repository_boot/org/springframework/boot/spring-boot-starter-parent/2.2.1.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MagpieBridgeApi/COSApi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MagpieBridgeApi/COSApi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MagpieBridgeApi/DB/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MagpieBridgeApi/DB/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MagpieBridgeApi/disruptor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MagpieBridgeApi/disruptor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MagpieBridgeApi/jediscloud/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MagpieBridgeApi/jediscloud/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MagpieBridgeApi/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MagpieBridgeApi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/service-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
