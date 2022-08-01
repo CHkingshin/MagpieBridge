@@ -1,0 +1,48 @@
+package cn.kingshin.rediscache.service.impl;
+
+import cn.hutool.core.util.StrUtil;
+import cn.hutool.json.JSONUtil;
+import cn.kingshin.rediscache.dto.Result;
+import cn.kingshin.rediscache.entity.Shop;
+import cn.kingshin.rediscache.mapper.ShopMapper;
+import cn.kingshin.rediscache.service.IShopService;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+
+import static cn.kingshin.rediscache.utils.RedisConstants.CACHE_SHOP_KEY;
+
+
+/**
+ * <p>
+ *  服务实现类
+ * </p>
+ */
+@Service
+public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IShopService {
+    @Resource
+    private StringRedisTemplate stringRedisTemplate;
+    @Override
+    public Result queryById(Long id) {
+
+        String key = CACHE_SHOP_KEY + id;
+        //先查redis
+        String shopJson = stringRedisTemplate.opsForValue().get(key);
+        //命中 取
+        if (StrUtil.isNotBlank(shopJson)) {
+            Shop shop = JSONUtil.toBean(shopJson, Shop.class);
+            return Result.ok(shop);
+        }
+        //未命中 去DB查
+        Shop shop = getById(id);
+        //DB无 返回错误
+        if (shop == null) {
+            return Result.fail("没有该店铺！");
+        }
+        //DB有 则回写redis
+        stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(shop));
+        return Result.ok(shop);
+    }
+}

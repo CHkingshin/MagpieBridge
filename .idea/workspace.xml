@@ -4,43 +4,89 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="redis fix">
-      <change afterPath="$PROJECT_DIR$/redis-demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis-demo/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis-demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis-demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis-demo/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis-demo/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis-demo/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/common/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/model/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service-order/.gitignore" afterDir="false" />
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="redis framework build">
+      <change afterPath="$PROJECT_DIR$/redisCache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/RedisCacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/config/WebExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/BlogCommentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/FollowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/ShopTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/VoucherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/VoucherOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/dto/LoginFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/dto/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/dto/ScrollResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/BlogComments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/Follow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/SeckillVoucher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/ShopType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/Voucher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/VoucherOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/mapper/BlogCommentsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/mapper/BlogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/mapper/FollowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/mapper/SeckillVoucherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/mapper/ShopMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/mapper/ShopTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/mapper/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/mapper/VoucherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/mapper/VoucherOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IBlogCommentsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IFollowService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/ISeckillVoucherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IShopTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IUserInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IVoucherOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IVoucherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/BlogCommentsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/FollowServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/SeckillVoucherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/PasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RefreshTokenInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RegexPatterns.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RegexUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/SystemConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/UserHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/resources/db/hmdp.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/resources/mapper/VoucherMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2022/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2022/cloud-api-commons/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2022/cloud-consumer-feign-order80/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2022/cloud-consumer-order80/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2022/cloud-eureka-server7001/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud2022/cloud-provider-payment8001/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba2022/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba2022/cloudalibaba-consumer-nacos-order83/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba2022/cloudalibaba-nacos2-18089/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba2022/cloudalibaba-provider-payment9001/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disruptorApi/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disruptorApi/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disruptorApi/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disruptorApi/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/disruptorApi/mvnw.cmd" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,12 +128,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/SourceTreeRepository/github/MagpieBridge",
+    "last_opened_file_path": "E:/SourceTreeRepository/github/MagpieBridge/redisCache/src/main/resources",
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "2aa6d4ef270bb914ccf670e00fbe0647"
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "spring.configuration.checksum": "90264cae845515cb23e8cebdf5689ff5"
   }
 }]]></component>
   <component name="RebelAgentSelection">
@@ -95,11 +141,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\resources" />
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\java\cn\kingshin\rediscache" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\test\java\com\chihsien\redis" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\main\resources" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\main\java\com\chihsien\redis" />
-      <recent name="E:\SourceTreeRepository\github\MagpieBridge\service\model\src\test\java\com\chihsien\model" />
-      <recent name="E:\SourceTreeRepository\github\MagpieBridge\service\common\src\main\java\com\chihsien\common" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.chihsien.redis" />
@@ -227,7 +273,10 @@
       <workItem from="1658448771908" duration="45000" />
       <workItem from="1658767279445" duration="1286000" />
       <workItem from="1658899071628" duration="6000" />
-      <workItem from="1659188212119" duration="53000" />
+      <workItem from="1659188212119" duration="247000" />
+      <workItem from="1659283392576" duration="674000" />
+      <workItem from="1659372486063" duration="688000" />
+      <workItem from="1659379246366" duration="1795000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -285,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658447741613</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="redis fix">
+      <created>1659188438817</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659188438817</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +366,8 @@
     <MESSAGE value="pojo fix" />
     <MESSAGE value="redis start" />
     <MESSAGE value="redis fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis fix" />
+    <MESSAGE value="redis framework build" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis framework build" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

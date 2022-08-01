@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="MP_Demo" />
         <module name="common" />
+        <module name="redisCache" />
         <module name="COSApi" />
         <module name="disruptor" />
         <module name="model" />
@@ -22,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
       <module name="model" options="-parameters" />
+      <module name="redisCache" options="-parameters" />
       <module name="service" options="" />
       <module name="service-order" options="-parameters" />
     </option>
