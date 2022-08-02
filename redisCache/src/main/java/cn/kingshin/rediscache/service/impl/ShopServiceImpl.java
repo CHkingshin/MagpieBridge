@@ -12,7 +12,10 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+import java.util.concurrent.TimeUnit;
+
 import static cn.kingshin.rediscache.utils.RedisConstants.CACHE_SHOP_KEY;
+import static cn.kingshin.rediscache.utils.RedisConstants.CACHE_SHOP_TTL;
 
 
 /**
@@ -42,7 +45,12 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
             return Result.fail("没有该店铺！");
         }
         //DB有 则回写redis
-        stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(shop));
+        stringRedisTemplate.opsForValue().set(key, JSONUtil.toJsonStr(shop),CACHE_SHOP_TTL, TimeUnit.MINUTES);
         return Result.ok(shop);
+    }
+
+    @Override
+    public Result update(Shop shop) {
+        return null;
     }
 }
