@@ -1,5 +1,9 @@
 package cn.kingshin.rediscache.utils;
 
+/**
+ * @author KingShin
+ * redis的常量
+ */
 public class RedisConstants {
     public static final String LOGIN_CODE_KEY = "login:code:";
     public static final Long LOGIN_CODE_TTL = 2L;
@@ -9,6 +13,11 @@ public class RedisConstants {
     public static final Long CACHE_NULL_TTL = 2L;
 
     public static final Long CACHE_SHOP_TTL = 30L;
+
+    //布隆过滤器里预计要插入多少数据
+    public static final Long CACHE_BLOOMFILTER_SIZE = 10*10000L;
+    //误判率,它越小误判的个数也就越少但耗时也越长 0.03是谷歌给出适中的概率
+    public static final double CACHE_BLOOMFILTER_FPP = 0.03;
     public static final String CACHE_SHOP_KEY = "cache:shop:";
     public static final String CACHE_SHOP_TYPE_KEY = "cache:shoptype:";
     public static final String CACHE_SHOPTYPE_KEY = "cache:shoptype:";
