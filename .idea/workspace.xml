@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="设置过期时间">
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/config/RedissonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/BloomFilterUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisConstants.java" afterDir="false" />
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="布隆过滤器">
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +240,7 @@
       <workItem from="1659372486063" duration="688000" />
       <workItem from="1659379246366" duration="2145000" />
       <workItem from="1659419473448" duration="12572000" />
-      <workItem from="1659506301605" duration="657000" />
+      <workItem from="1659506301605" duration="969000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -332,7 +326,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659432114761</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="布隆过滤器">
+      <created>1659507024172</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659507024172</updated>
+    </task>
+    <task id="LOCAL-00014" summary="布隆过滤器">
+      <created>1659507242681</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1659507242681</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +367,8 @@
     <MESSAGE value="redis fix" />
     <MESSAGE value="redis framework build" />
     <MESSAGE value="设置过期时间" />
-    <option name="LAST_COMMIT_MESSAGE" value="设置过期时间" />
+    <MESSAGE value="布隆过滤器" />
+    <option name="LAST_COMMIT_MESSAGE" value="布隆过滤器" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
