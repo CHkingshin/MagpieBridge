@@ -2,12 +2,12 @@ server:
   port: 8081
 spring:
   application:
-    name: hmdp
+    name: rediscache
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://xxxx:3306/hmdp?useSSL=false&serverTimezone=UTC
-    username: root
-    password: root
+    url: jdbc:mysql://xxx:3306/hmdp?useSSL=false&serverTimezone=UTC
+    username: xxxx
+    password: xxxx
   redis:
     host: xxxx
     port: 6379
@@ -21,7 +21,8 @@ spring:
   jackson:
     default-property-inclusion: non_null # JSON处理时忽略非空字段
 mybatis-plus:
-  type-aliases-package: com.hmdp.entity # 别名扫描包
+  type-aliases-package: cn.kingshin.rediscache.entity # 别名扫描包
 logging:
   level:
-    com.hmdp: debug
+    cn.kingshin.rediscache: debug
+# redission
