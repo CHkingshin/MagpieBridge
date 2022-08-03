@@ -5,13 +5,13 @@ spring:
     name: rediscache
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://139.155.39.21:13306/hmdp?useSSL=false&serverTimezone=UTC
-    username: root
-    password: root
+    url: jdbc:mysql://xxxx:3306/xxxx?useSSL=false&serverTimezone=UTC
+    username: xxxx
+    password: xxxx
   redis:
-    host: 139.155.39.21
+    host: xxxx
     port: 6379
-    password: kingshinredis
+    password: xxxx
     lettuce:
       pool:
         max-active: 10
