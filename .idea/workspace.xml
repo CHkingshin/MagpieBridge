@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="三种应对缓存击穿和穿透的方式">
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/CacheClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisIdWorker.java" afterDir="false" />
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="缓存击穿和穿透封装">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisData.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/RedisCacheApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/RedisCacheApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/VoucherOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/VoucherOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IVoucherOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IVoucherOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisIdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisIdWorker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +58,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "MyBatisLogPluginindexNum": "415",
+    "MyBatisLogPluginindexNum": "9082",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -247,7 +249,7 @@
       <workItem from="1659506301605" duration="8164000" />
       <workItem from="1659543839569" duration="8174000" />
       <workItem from="1659601402260" duration="3797000" />
-      <workItem from="1659625210043" duration="6440000" />
+      <workItem from="1659625210043" duration="17947000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -368,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659629277338</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="缓存击穿和穿透封装">
+      <created>1659632400452</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1659632400452</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +406,8 @@
     <MESSAGE value="设置过期时间" />
     <MESSAGE value="布隆过滤器" />
     <MESSAGE value="三种应对缓存击穿和穿透的方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="三种应对缓存击穿和穿透的方式" />
+    <MESSAGE value="缓存击穿和穿透封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="缓存击穿和穿透封装" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
