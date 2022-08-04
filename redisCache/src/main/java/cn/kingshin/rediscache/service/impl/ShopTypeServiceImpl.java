@@ -1,5 +1,7 @@
 package cn.kingshin.rediscache.service.impl;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.bean.copier.CopyOptions;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
 import cn.kingshin.rediscache.dto.Result;
@@ -12,7 +14,8 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -23,8 +26,16 @@ import java.util.List;
 public class ShopTypeServiceImpl extends ServiceImpl<ShopTypeMapper, ShopType> implements IShopTypeService {
     @Resource
     private StringRedisTemplate stringRedisTemplate;
+
+    /**
+     * @description
+     * string方式实现
+     * @return cn.kingshin.rediscache.dto.Result
+     * @author KingShin
+     * @date 2022/8/4 00:36:09
+     */
     @Override
-    public Result queryTypeList() {
+    public Result StrqueryTypeList() {
         //1.从redis中查询店铺类型缓存
         String shopType = stringRedisTemplate.opsForValue().get(RedisConstants.CACHE_SHOPTYPE_KEY);
         //2.判断是否为空
@@ -43,5 +54,88 @@ public class ShopTypeServiceImpl extends ServiceImpl<ShopTypeMapper, ShopType> i
         stringRedisTemplate.opsForValue().set(RedisConstants.CACHE_SHOPTYPE_KEY,JSONUtil.toJsonStr(shopTypes));
         //7.返回
         return Result.ok(shopTypes);
+    }
+    /**
+     * @description
+     * list方法实现
+     * @return cn.kingshin.rediscache.dto.Result
+     * @author KingShin
+     * @date 2022/8/4 00:38:05
+     */
+    @Override
+    public Result getTypeList() {
+        //1.查询redis里与shopType:id:* 一样的key
+        Set<String> keys = stringRedisTemplate.keys("shopType:id:*");
+        //2.如果keys不为空 命中 返回
+        if (!keys.isEmpty()) {
+            List<ShopType> shopTypes = keys.stream().map(shop -> {
+                // 获取keys中每个shop的键值对。
+                Map<Object, Object> entries = stringRedisTemplate.opsForHash().entries(shop);
+                //将获取到的shop键值对封装进map
+                return BeanUtil.fillBeanWithMap(entries, new ShopType(), false);
+            }).collect(Collectors.toList());
+            //返回
+            return Result.ok(shopTypes);
+        }
+        //3.如果为空 未命中 去DB查
+        List<ShopType> typeList = this.query().orderByAsc("sort").list();
+        //4.DB也为空 返回错误
+        if (typeList.isEmpty()) {
+            return Result.fail("非法查询！不存在该分类！");
+        }
+
+        //流式太复杂
+        typeList.forEach(shopType ->{
+                        //将DB取回的元素封装
+                        Map<String, Object> shopTypeMap = BeanUtil.beanToMap(shopType,
+                        new HashMap<>(),
+                        CopyOptions.create()
+                        .setIgnoreNullValue(true)
+                        .setFieldValueEditor((key,value)-> value.toString()));
+            //DB有 则遍历后封装写回缓存
+            stringRedisTemplate.opsForHash().putAll("shopType:id:"+shopType.getId(),shopTypeMap);
+        });
+
+        return Result.ok(typeList);
+
+    }
+
+
+
+
+    /**
+     * @description
+     * 传统写法
+     * @return cn.kingshin.rediscache.dto.Result
+     * @author KingShin
+     * @date 2022/8/4 00:46:13
+     */
+    private Result m1() {
+        String key = "cache:typelist";
+        //1.在redis中间查询
+        List<String> shopTypeList;
+        shopTypeList = stringRedisTemplate.opsForList().range(key,0,-1);
+        //2.判断是否缓存中了
+        //3.中了返回
+        if (shopTypeList != null && !shopTypeList.isEmpty()) {
+            List<ShopType> typeList = new ArrayList<>();
+            for (String s : shopTypeList) {
+                ShopType shopType = JSONUtil.toBean(s, ShopType.class);
+                typeList.add(shopType);
+            }
+            return Result.ok(typeList);
+        }
+        List<ShopType> typeList = query().orderByAsc("sort").list();
+        //5.不存在直接返回错误
+        if(typeList.isEmpty()){
+            return Result.fail("不存在分类");
+        }
+        for(ShopType shopType : typeList){
+            String s = JSONUtil.toJsonStr(shopType);
+            shopTypeList.add(s);
+        }
+        //6.存在直接添加进缓存
+        stringRedisTemplate.opsForList().rightPushAll(key, shopTypeList);
+        return Result.ok(typeList);
     }
 }

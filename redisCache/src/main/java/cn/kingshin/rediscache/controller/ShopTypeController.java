@@ -22,6 +22,7 @@ public class ShopTypeController {
 
     @GetMapping("list")
     public Result queryTypeList() {
-        return typeService.queryTypeList();
+      //  return typeService.StrqueryTypeList();
+       return typeService.getTypeList();
     }
 }
