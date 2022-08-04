@@ -9,6 +9,7 @@ import cn.kingshin.rediscache.entity.Shop;
 import cn.kingshin.rediscache.mapper.ShopMapper;
 import cn.kingshin.rediscache.service.IShopService;
 import cn.kingshin.rediscache.utils.BloomFilterUtil;
+import cn.kingshin.rediscache.utils.CacheClient;
 import cn.kingshin.rediscache.utils.RedisData;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.redisson.api.RBloomFilter;
@@ -50,6 +51,9 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     @Resource
     private BloomFilterUtil bloomFilterUtil;//此处可以换成hutool的工具类 提供了封装成map的方法
 
+    @Resource
+    private CacheClient cacheClient;
+
 
     @PostConstruct // 项目启动的时候执行该方法，也可以理解为在spring容器初始化的时候执行该方法
     public void init() {
@@ -64,18 +68,18 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     @Override
     public Result queryById(Long id) {
         //缓存穿透
-        //Shop shop = quryWithPassThrough(id);
+        //Shop shop = cacheClient.queryWithPassThrough(CACHE_SHOP_KEY,id,Shop.class,this::getById,CACHE_SHOP_TTL,TimeUnit.MINUTES);
 
         //互斥锁解决缓存击穿
         //Shop shop = quryWithMutex(id);
 
         //逻辑过期解决缓存击穿问题
-        Shop shop = quryWithLogicalExpire(id);
+        Shop shop = cacheClient
+                .queryWithLogicalExpire(CACHE_SHOP_KEY,id,Shop.class,this::getById,20L,TimeUnit.MINUTES);
 
         if (shop == null) {
             return Result.fail("店铺不存在！");
         }
-
 
         return Result.ok(shop);
     }

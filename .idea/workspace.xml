@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="布隆过滤器">
-      <change afterPath="$PROJECT_DIR$/redisCache/src/test/java/cn/kingshin/rediscache/RedisCacheApplicationTests.java" afterDir="false" />
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="三种应对缓存击穿和穿透的方式">
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/CacheClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisIdWorker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/ShopTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/ShopTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IShopTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IShopTypeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopTypeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisData.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" afterDir="false" />
     </list>
@@ -58,7 +56,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "MyBatisLogPluginindexNum": "408",
+    "MyBatisLogPluginindexNum": "415",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -67,7 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/SourceTreeRepository/github/MagpieBridge/redisCache/src/main/resources",
+    "last_opened_file_path": "E:/SourceTreeRepository/github/MagpieBridge/redisCache/src/main/java/cn/kingshin/rediscache/utils",
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -80,11 +78,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\java\cn\kingshin\rediscache\utils" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\resources" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\java\cn\kingshin\rediscache" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\test\java\com\chihsien\redis" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\main\resources" />
-      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\main\java\com\chihsien\redis" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.chihsien.redis" />
@@ -249,7 +247,7 @@
       <workItem from="1659506301605" duration="8164000" />
       <workItem from="1659543839569" duration="8174000" />
       <workItem from="1659601402260" duration="3797000" />
-      <workItem from="1659625210043" duration="3737000" />
+      <workItem from="1659625210043" duration="6440000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -363,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659507496984</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="三种应对缓存击穿和穿透的方式">
+      <created>1659629277338</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1659629277338</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +396,8 @@
     <MESSAGE value="redis framework build" />
     <MESSAGE value="设置过期时间" />
     <MESSAGE value="布隆过滤器" />
-    <option name="LAST_COMMIT_MESSAGE" value="布隆过滤器" />
+    <MESSAGE value="三种应对缓存击穿和穿透的方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="三种应对缓存击穿和穿透的方式" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
