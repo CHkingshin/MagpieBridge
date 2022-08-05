@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="缓存击穿和穿透封装">
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="单体架构高并发下的解决方案 悲观细粒度锁 复杂 TODO分布式锁">
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/ILock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/SimpleRedisLock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/RedisCacheApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/RedisCacheApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/VoucherOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/VoucherOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IVoucherOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IVoucherOrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisIdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/RedisIdWorker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/model/src/main/java/com/chihsien/model/model/vod/CourseCollect.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/model/src/main/java/com/chihsien/model/model/vod/CourseCollect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,26 +53,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "MyBatisLogPluginindexNum": "9082",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/SourceTreeRepository/github/MagpieBridge/redisCache/src/main/java/cn/kingshin/rediscache/utils",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "com.zeroturnaround.javarebel.idea.plugin.settings.AboutConfigurable",
-    "spring.configuration.checksum": "fb554b80b435e407cb08658b669df6f7"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;MyBatisLogPluginindexNum&quot;: &quot;9306&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/SourceTreeRepository/github/MagpieBridge/redisCache/src/main/java/cn/kingshin/rediscache/utils&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fb554b80b435e407cb08658b669df6f7&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -103,7 +104,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RedisCacheApplication">
+  <component name="RunManager" selected="Spring Boot.RedisDemoApplication (1)">
     <configuration name="BloomFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="redisCache" />
       <extension name="coverage">
@@ -115,22 +116,6 @@
       <option name="PACKAGE_NAME" value="cn.kingshin.rediscache" />
       <option name="MAIN_CLASS_NAME" value="cn.kingshin.rediscache.BloomFilterTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BloomFilterTest.testBloomFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="redisCache" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.kingshin.rediscache.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.kingshin.rediscache" />
-      <option name="MAIN_CLASS_NAME" value="cn.kingshin.rediscache.BloomFilterTest" />
-      <option name="METHOD_NAME" value="testBloomFilter" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,6 +152,7 @@
       </method>
     </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="disruptor" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.DemoApplication" />
       <method v="2">
@@ -180,9 +166,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisCacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisCacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
       <module name="redisCache" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.kingshin.rediscache.RedisCacheApplication" />
+      <option name="VM_PARAMETERS" value="--illegal-access=deny --add-opens java.base/java.lang=ALL-UNNAMED" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.kingshin.rediscache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisCacheApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="redisCache" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.kingshin.rediscache.RedisCacheApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8082 --illegal-access=deny --add-opens java.base/java.lang=ALL-UNNAMED" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.kingshin.rediscache.*" />
@@ -194,14 +197,19 @@
       </method>
     </configuration>
     <configuration name="RedisDemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="redis-demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.chihsien.redis.RedisDemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="RedisDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
+      <option name="ACTIVE_PROFILES" />
       <module name="jediscloud" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.redis.RedisDemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -214,13 +222,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.BloomFilterTest" />
+      <item itemvalue="JUnit.RedisCacheApplicationTests" />
+      <item itemvalue="JUnit.RedisCacheApplicationTests.testSaveShop" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.MpDemoApplication" />
+      <item itemvalue="Spring Boot.RedisDemoApplication" />
+      <item itemvalue="Spring Boot.RedisDemoApplication (1)" />
+      <item itemvalue="Spring Boot.ServiceOrderApplication" />
+      <item itemvalue="Spring Boot.RedisCacheApplication" />
+      <item itemvalue="Spring Boot.RedisCacheApplication2" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.RedisCacheApplication2" />
         <item itemvalue="Spring Boot.RedisCacheApplication" />
         <item itemvalue="JUnit.RedisCacheApplicationTests.testSaveShop" />
         <item itemvalue="JUnit.RedisCacheApplicationTests" />
         <item itemvalue="JUnit.BloomFilterTest" />
-        <item itemvalue="JUnit.BloomFilterTest.testBloomFilter" />
       </list>
     </recent_temporary>
   </component>
@@ -250,6 +270,11 @@
       <workItem from="1659543839569" duration="8174000" />
       <workItem from="1659601402260" duration="3797000" />
       <workItem from="1659625210043" duration="17947000" />
+      <workItem from="1659648080326" duration="85000" />
+      <workItem from="1659687143954" duration="4365000" />
+      <workItem from="1659692200363" duration="1540000" />
+      <workItem from="1659718310611" duration="7404000" />
+      <workItem from="1659728907840" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -377,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659632400452</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="单体架构高并发下的解决方案 悲观细粒度锁 复杂 TODO分布式锁">
+      <created>1659648150754</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1659648150755</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +439,24 @@
     <MESSAGE value="布隆过滤器" />
     <MESSAGE value="三种应对缓存击穿和穿透的方式" />
     <MESSAGE value="缓存击穿和穿透封装" />
-    <option name="LAST_COMMIT_MESSAGE" value="缓存击穿和穿透封装" />
+    <MESSAGE value="单体架构高并发下的解决方案 悲观细粒度锁 复杂 TODO分布式锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="单体架构高并发下的解决方案 悲观细粒度锁 复杂 TODO分布式锁" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

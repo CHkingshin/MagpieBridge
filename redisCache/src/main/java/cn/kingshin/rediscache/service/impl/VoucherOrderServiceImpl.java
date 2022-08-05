@@ -7,9 +7,11 @@ import cn.kingshin.rediscache.mapper.VoucherOrderMapper;
 import cn.kingshin.rediscache.service.ISeckillVoucherService;
 import cn.kingshin.rediscache.service.IVoucherOrderService;
 import cn.kingshin.rediscache.utils.RedisIdWorker;
+import cn.kingshin.rediscache.utils.SimpleRedisLock;
 import cn.kingshin.rediscache.utils.UserHolder;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.aop.framework.AopContext;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -28,6 +30,9 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
     private ISeckillVoucherService seckillVoucherService;
     @Resource
     private RedisIdWorker redisIdWorker;
+
+    @Resource
+    private StringRedisTemplate stringRedisTemplate;
 
 
 
@@ -49,7 +54,27 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
 
         //用户id
         Long userId = UserHolder.getUser().getId();
-        /**
+        //创建锁对象 拼接业务标识 保证每个线程进来携带key的唯一性 保证锁的是用户 "order:" + userId 就是我们要锁的对象
+        SimpleRedisLock lock = new SimpleRedisLock("order:" + userId, stringRedisTemplate);
+        //获取锁
+        boolean islock = lock.tryLock(1200);
+        //判断是否获得到锁  一般先写反 避免后续代码嵌套判断未获得锁
+        if(!islock){
+            //拿锁失败 返回错误或重试 这里能进来还是一个用户 肯定是jio本 直接封杀！
+            return Result.fail("小逼崽子喜欢开脚本是吧？不允许重复下单！再次查获直接封IP");
+        }
+
+        try {
+            //获取代理对象（事务）
+            IVoucherOrderService proxy = (IVoucherOrderService) AopContext.currentProxy();
+            return proxy.creatVoucherOder(voucherId);
+        } finally {
+            //释放锁
+            lock.unlock();
+        }
+
+
+        /**  用synchronized的版本 可以参考 但是效果极差
          * 细粒度的锁 锁常量保证请求来的ID是一个用户的
          * intern->返回字符串对象的规范表示:
          * 去常量池里找和userId一样的引用或者地址返回
@@ -60,16 +85,16 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
          * 如果此时订单还没落到DB上 那新进来的线程查到的订单数据是还没写进DB的订单数据
          * 应该锁在事务提交之后 这样函数结束之后 订单必定已经落在DB上！
          */
-        synchronized (userId.toString().intern()){
-            /** 获取代理对象（事务）保证事务提交之后释放锁
+      /*  synchronized (userId.toString().intern()){
+            *//** 获取代理对象（事务）保证事务提交之后释放锁
                 注意这里的creatVoucherOder方法是当前对象VoucherOrderServiceImpl 即this调用的
                 并非代理对象 这样会导致@Transactional失效
                 记得加入aspectjweaver依赖
                 同时在启动类上暴露代理对象 @EnableAspectJAutoProxy(exposeProxy = true)
-            */
+            *//*
             IVoucherOrderService proxy = (IVoucherOrderService) AopContext.currentProxy();
             return proxy.creatVoucherOder(voucherId);
-        }
+        }*/
     }
     /**
      * @description 创建订单逻辑
