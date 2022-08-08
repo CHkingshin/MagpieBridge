@@ -13,6 +13,7 @@
         <module name="COSApi" />
         <module name="disruptor" />
         <module name="model" />
+        <module name="StreamEx" />
         <module name="redis-demo" />
         <module name="service-order" />
         <module name="jediscloud" />
@@ -21,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="StreamEx" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="model" options="-parameters" />
       <module name="redisCache" options="-parameters" />
