@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="redis分布式锁">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StreamEx/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StreamEx/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StreamEx/src/main/java/cn/kingshin/streamex/pojo/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StreamEx/src/main/java/cn/kingshin/streamex/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StreamEx/src/main/java/cn/kingshin/streamex/stream/StreamDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StreamEx/src/main/java/cn/kingshin/streamex/stream/StreamexDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StreamEx/src/main/java/cn/kingshin/streamex/vavr/VavrDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StreamEx/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/resources/seckill.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/resources/unlock.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/config/RedissonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/config/RedissonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/SimpleRedisLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/SimpleRedisLock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/model/src/main/java/com/chihsien/model/model/vod/VideoVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/model/src/main/java/com/chihsien/model/model/vod/VideoVisitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,27 +55,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "MyBatisLogPluginindexNum": "9306",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/case2022/opsource",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "c28d8255e066da575ea74eba35c31ae3"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;MyBatisLogPluginindexNum&quot;: &quot;9607&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/User/下载/Alibaba.Java.Coding.Guidelines-2.1.1-fix-2022.1.zip&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2ea4d21cf8b86681b232bc383873c296&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -91,8 +84,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\java\cn\kingshin\rediscache\utils" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\resources" />
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\java\cn\kingshin\rediscache\utils" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\java\cn\kingshin\rediscache" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\test\java\com\chihsien\redis" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\main\resources" />
@@ -242,10 +235,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.RedisCacheApplication" />
+        <item itemvalue="Spring Boot.RedisCacheApplication2" />
         <item itemvalue="应用程序.StreamexDemo" />
         <item itemvalue="应用程序.VavrDemo" />
-        <item itemvalue="Spring Boot.RedisCacheApplication2" />
-        <item itemvalue="Spring Boot.RedisCacheApplication" />
         <item itemvalue="JUnit.RedisCacheApplicationTests.testSaveShop" />
       </list>
     </recent_temporary>
@@ -284,7 +277,14 @@
       <workItem from="1659860564836" duration="5747000" />
       <workItem from="1659897059547" duration="63000" />
       <workItem from="1659897155158" duration="14000" />
-      <workItem from="1659942923714" duration="7397000" />
+      <workItem from="1659942923714" duration="7690000" />
+      <workItem from="1659984327514" duration="2304000" />
+      <workItem from="1659986666025" duration="93000" />
+      <workItem from="1659986774213" duration="124000" />
+      <workItem from="1659986912044" duration="278000" />
+      <workItem from="1659987202133" duration="51000" />
+      <workItem from="1659987265424" duration="933000" />
+      <workItem from="1660030005010" duration="1608000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -426,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659730145171</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="redis分布式锁">
+      <created>1659983932335</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1659983932335</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

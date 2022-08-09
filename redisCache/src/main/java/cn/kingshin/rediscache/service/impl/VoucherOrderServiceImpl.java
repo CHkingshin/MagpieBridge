@@ -7,9 +7,10 @@ import cn.kingshin.rediscache.mapper.VoucherOrderMapper;
 import cn.kingshin.rediscache.service.ISeckillVoucherService;
 import cn.kingshin.rediscache.service.IVoucherOrderService;
 import cn.kingshin.rediscache.utils.RedisIdWorker;
-import cn.kingshin.rediscache.utils.SimpleRedisLock;
 import cn.kingshin.rediscache.utils.UserHolder;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.redisson.api.RLock;
+import org.redisson.api.RedissonClient;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -34,7 +35,8 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
     @Resource
     private StringRedisTemplate stringRedisTemplate;
 
-
+    @Resource
+    private RedissonClient redissonClient;
 
     @Override
     public Result seckillVoucher(Long voucherId) {
@@ -55,9 +57,10 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
         //用户id
         Long userId = UserHolder.getUser().getId();
         //创建锁对象 拼接业务标识 保证每个线程进来携带key的唯一性 保证锁的是用户 "order:" + userId 就是我们要锁的对象
-        SimpleRedisLock lock = new SimpleRedisLock("order:" + userId, stringRedisTemplate);
+        //SimpleRedisLock lock = new SimpleRedisLock("order:" + userId, stringRedisTemplate);
+        RLock lock = redissonClient.getLock("lock:order:" + userId);
         //获取锁
-        boolean islock = lock.tryLock(1200);
+        boolean islock = lock.tryLock();//失败不等待
         //判断是否获得到锁  一般先写反 避免后续代码嵌套判断未获得锁
         if(!islock){
             //拿锁失败 返回错误或重试 这里能进来还是一个用户 肯定是jio本 直接封杀！

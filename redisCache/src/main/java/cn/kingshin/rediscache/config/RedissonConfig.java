@@ -22,6 +22,9 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 import java.time.Duration;
 import java.util.Random;
 
+/**
+ * @author KingShin
+ */
 @EnableCaching
 @Configuration
 public class RedissonConfig {
@@ -36,7 +39,7 @@ public class RedissonConfig {
 
 
     @Bean(destroyMethod = "shutdown")  // bean销毁时关闭Redisson实例，但不关闭Redis服务
-    public RedissonClient redisson() {
+    public RedissonClient redissonClient() {
         //创建配置
         Config config = new Config();
         /**

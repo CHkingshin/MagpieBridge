@@ -6,6 +6,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 
+import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
 public class SimpleRedisLock implements ILock {
@@ -20,11 +21,12 @@ public class SimpleRedisLock implements ILock {
 
     private static final String KEY_PREFIX = "lock:";//锁名前缀
     private static final String ID_PREFIX = UUID.randomUUID().toString(true) + "-";
-    private static final DefaultRedisScript<Long> UNLOCK_SCRIPT;
+    private static final DefaultRedisScript<Long> UNLOCK_SCRIPT;//定义脚本
+    //lua脚本初始化
     static {
         UNLOCK_SCRIPT = new DefaultRedisScript<>();
-        UNLOCK_SCRIPT.setLocation(new ClassPathResource("unlock.lua"));
-        UNLOCK_SCRIPT.setResultType(Long.class);
+        UNLOCK_SCRIPT.setLocation(new ClassPathResource("unlock.lua"));//脚本位置
+        UNLOCK_SCRIPT.setResultType(Long.class);//返回值
     }
 
     @Override
@@ -39,15 +41,17 @@ public class SimpleRedisLock implements ILock {
         // return Boolean.TRUE.equals(success);
     }
 
-   /* @Override
+    @Override   //lua脚本中进行了判断和删除 整个操作是一个原子操作 不存在并发安全问题
     public void unlock() {
         // 调用lua脚本 实际生产中lua脚本的维护十分令人难受 在redis7.0版本中用函数取代了Lua
         stringRedisTemplate.execute(
-                UNLOCK_SCRIPT,
-                Collections.singletonList(KEY_PREFIX + name),
-                ID_PREFIX + Thread.currentThread().getId());
-    }*/
-    @Override
+                UNLOCK_SCRIPT,//Lua脚本
+                Collections.singletonList(KEY_PREFIX +name),//锁的key的集合
+                ID_PREFIX + Thread.currentThread().getId()//线程标识
+                );
+    }
+    //传统做法 操作之间不是原子操作 阻塞会导致线程安全问题
+   /* @Override
     public void unlock() {
 
         // 获取线程标示
@@ -59,5 +63,5 @@ public class SimpleRedisLock implements ILock {
             // 释放锁
             stringRedisTemplate.delete(KEY_PREFIX + name);
         }
-    }
+    }*/
 }
