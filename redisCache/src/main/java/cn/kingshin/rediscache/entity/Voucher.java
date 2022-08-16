@@ -80,12 +80,14 @@ public class Voucher implements Serializable {
      * 生效时间
      */
     @TableField(exist = false)
+    //@JsonFormat(shape = JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private LocalDateTime beginTime;
 
     /**
      * 失效时间
      */
     @TableField(exist = false)
+    //@JsonFormat(shape = JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private LocalDateTime endTime;
 
     /**

@@ -21,12 +21,10 @@ import javax.annotation.Resource;
 public class VoucherOrderController {
 
     @Resource
-    private IVoucherOrderService iVoucherOrderService;
+    private IVoucherOrderService voucherOrderService;
 
     @PostMapping("seckill/{id}")
     public Result seckillVoucher(@PathVariable("id") Long voucherId) {
-
-
-        return iVoucherOrderService.seckillVoucher(voucherId);
+        return voucherOrderService.seckillVoucher(voucherId);
     }
 }
