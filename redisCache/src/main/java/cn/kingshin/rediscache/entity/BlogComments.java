@@ -11,9 +11,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * <p>
- * 
- * </p>
+ * @author KingShin
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

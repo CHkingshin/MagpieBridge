@@ -5,27 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="redis分布式锁">
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/disruptor/ADisruptorConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/disruptor/DisruptorQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/disruptor/DisruptorQueueFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/disruptor/ObjectEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/disruptor/ObjectEventFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/disruptor/sample/DisruptorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/disruptor/sample/DisruptorTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/disruptor/sample/DisruptorTest3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/disruptor/sample/MyConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/disruptor/sample/MyProducerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/VoucherOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/VoucherOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/Voucher.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/Voucher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IVoucherOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IVoucherOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/FollowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/FollowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/BlogComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/BlogComments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/Follow.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/entity/Follow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IFollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IFollowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/FollowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/FollowServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/VoucherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/utils/SystemConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/resources/seckill.lua" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/resources/seckill.lua" afterDir="false" />
     </list>
@@ -71,27 +61,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "MyBatisLogPluginindexNum": "10293",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/User/下载/Alibaba.Java.Coding.Guidelines-2.1.1-fix-2022.1.zip",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "yiiguxing.plugin.translate",
-    "spring.configuration.checksum": "2ea4d21cf8b86681b232bc383873c296"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;MyBatisLogPluginindexNum&quot;: &quot;10921&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/User/下载/Alibaba.Java.Coding.Guidelines-2.1.1-fix-2022.1.zip&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2ea4d21cf8b86681b232bc383873c296&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -300,6 +290,9 @@
       <workItem from="1660543956409" duration="11438000" />
       <workItem from="1660559199890" duration="2110000" />
       <workItem from="1660561326757" duration="12750000" />
+      <workItem from="1660615946570" duration="16031000" />
+      <workItem from="1660760645946" duration="255000" />
+      <workItem from="1660760918785" duration="652000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -455,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660064148562</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="redis分布式锁">
+      <created>1660616197715</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1660616197715</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

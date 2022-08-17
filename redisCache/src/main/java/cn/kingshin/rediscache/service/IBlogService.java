@@ -1,5 +1,6 @@
 package cn.kingshin.rediscache.service;
 
+import cn.kingshin.rediscache.dto.Result;
 import cn.kingshin.rediscache.entity.Blog;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -10,4 +11,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IBlogService extends IService<Blog> {
 
+    Result queryHotBlog(Integer current);
+
+    Result queryBlogById(Long id);
+
+    Result likeBlog(Long id);
+
+    Result queryBlogLikes(Long id);
 }

@@ -98,28 +98,29 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
 
 
 
+    @Override
     @Transactional
     public void createVoucherOrder(VoucherOrder voucherOrder) {
         // 5.一人一单
         Long userId = voucherOrder.getUserId();//子线程不能从threadLocal里获得id
-            // 5.1.查询订单
-            int count = query().eq("user_id", userId).eq("voucher_id", voucherOrder.getVoucherId()).count();
-            // 5.2.判断是否存在
-            if (count > 0) {
-                // 用户已经购买过了
-                log.error("用户已经购买过一次！");
-                return;
-            }
-            // 6.扣减库存
-            boolean success = seckillVoucherService.update()
-                    .setSql("stock = stock - 1") // set stock = stock - 1
-                    .eq("voucher_id", voucherOrder.getVoucherId()).gt("stock", 0) // where id = ? and stock > 0
-                    .update();
-            if (!success) {
-                // 扣减失败
-                log.error("库存不足！");
-                return;
-            }
+        // 5.1.查询订单
+        int count = query().eq("user_id", userId).eq("voucher_id", voucherOrder.getVoucherId()).count();
+        // 5.2.判断是否存在
+        if (count > 0) {
+            // 用户已经购买过了
+            log.error("用户已经购买过一次！");
+            return;
+        }
+        // 6.扣减库存
+        boolean success = seckillVoucherService.update()
+                .setSql("stock = stock - 1") // set stock = stock - 1
+                .eq("voucher_id", voucherOrder.getVoucherId()).gt("stock", 0) // where id = ? and stock > 0
+                .update();
+        if (!success) {
+            // 扣减失败
+            log.error("库存不足！");
+            return;
+        }
         save(voucherOrder);
     }
     /**
@@ -225,7 +226,7 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             return;
         }
         try {
-           proxy.createVoucherOrder(voucherOrder);
+            proxy.createVoucherOrder(voucherOrder);
         } finally {
             lock.unlock();
         }
