@@ -3,8 +3,10 @@ package cn.kingshin.rediscache.service.impl;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.kingshin.rediscache.dto.Result;
+import cn.kingshin.rediscache.dto.ScrollResult;
 import cn.kingshin.rediscache.dto.UserDTO;
 import cn.kingshin.rediscache.entity.Blog;
+import cn.kingshin.rediscache.entity.Follow;
 import cn.kingshin.rediscache.entity.User;
 import cn.kingshin.rediscache.mapper.BlogMapper;
 import cn.kingshin.rediscache.service.IBlogService;
@@ -15,15 +17,19 @@ import cn.kingshin.rediscache.utils.UserHolder;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 import static cn.kingshin.rediscache.utils.RedisConstants.BLOG_LIKED_KEY;
+import static cn.kingshin.rediscache.utils.RedisConstants.FEED_KEY;
 
 /**
  * <p>
@@ -41,7 +47,8 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
 
     @Resource
     private IFollowService followService;
-
+    @Resource
+    private IBlogService blogService;
     @Override
     public Result queryHotBlog(Integer current) {
         // 根据用户查询
@@ -152,6 +159,91 @@ public class BlogServiceImpl extends ServiceImpl<BlogMapper, Blog> implements IB
                 .collect(Collectors.toList());
         //返回
         return Result.ok(userDTOS);
+    }
+
+    @Override
+    @Transactional
+    public Result saveBlog(Blog blog) {
+        // 获取登录用户
+        UserDTO user = UserHolder.getUser();
+        blog.setUserId(user.getId());
+        // 保存探店博文
+        boolean isSuccess = save(blog);
+        if (!isSuccess) {
+            return Result.fail("新增笔记失败");
+        }
+        //查询作者所有的粉丝
+        List<Follow> follows = followService.query().eq("follow_user_id", user.getId()).list();
+        //推送笔记id给所有粉丝
+        follows.forEach(follow -> {
+            Long userId = follow.getUserId();
+            String key = FEED_KEY + userId;
+            //推送  以时间戳为标记进行排序判定
+            stringRedisTemplate.opsForZSet().add(key,blog.getId().toString(),System.currentTimeMillis());
+        });
+        // 返回id
+        return Result.ok(blog.getId()+"发布成功！");
+    }
+    /**
+     * @description 滚动分页推送
+     * @param max
+     * @param offset
+     * @return cn.kingshin.rediscache.dto.Result
+     * @author KingShin
+     * @date 2022/8/23 16:00:14
+     */
+    @Override
+    public Result queryBlogOfFollow(Long max, Integer offset) {
+        //获取当前用户
+        Long userid = UserHolder.getUser().getId();
+        //查询收件箱
+        String key = FEED_KEY + userid;
+        Set<ZSetOperations.TypedTuple<String>> typedTuples = stringRedisTemplate
+                .opsForZSet()
+                .reverseRangeByScoreWithScores(key, 0, max, offset, 3);
+
+        //判空
+        if(typedTuples ==null||typedTuples.isEmpty()){
+            return Result.ok();
+        }
+        //取出blog的id 时间戳score offset
+        ArrayList<Object> ids = new ArrayList<>(typedTuples.size());//定义和收件箱一样长度的数组装id
+        long minTime = 0;//给定初始化时间为0 循环遍历之后minTime里一定是最后一个元素的时间
+        int os = 1;//offset初始化为1 集合里起码会有一个和minTime一样的 那就是他本身
+        for (ZSetOperations.TypedTuple<String> tuple : typedTuples) {
+            //获取id
+            ids.add(Long.valueOf(tuple.getValue()));
+            //获取分数（时间戳
+            // minTime.set(tuple.getScore().longValue());
+            long time = tuple.getScore().longValue();
+            //如果取出来的时间戳和最小时间戳一样 则表示有重复的时间戳
+            if(time == minTime){
+                os++;
+            }else {
+                //不一样说明当前时间不是最小时间 后取的时间肯定比当前时间小
+                minTime = time;
+                //重置 解决漏读重复的blog
+                os = 1;
+            }
+        }
+        //根据id查询blog 注意 这里的ids数组是有序的 不能直接在Mysql里用in去查 加orderby
+        String idStr = StrUtil.join(",", ids);  //拼接一下
+        List<Blog> blogs = query()
+                .in("id", ids)
+                .last("ORDER BY FIELD(id," + idStr + ") ")//自动在前面的sql语句前拼接
+                .list();
+        //查询是否有关注的用户和blog是否被点赞
+        blogs.forEach(blog -> {
+                queryBlogUser(blog);
+                isBlogLiked(blog);
+                }
+        );
+        // 封装返回
+        ScrollResult scrollResult = new ScrollResult();
+        scrollResult.setList(blogs);
+        scrollResult.setOffset(os);
+        scrollResult.setMinTime(minTime);
+        return Result.ok(scrollResult);
     }
 
     private void queryBlogUser(Blog blog) {

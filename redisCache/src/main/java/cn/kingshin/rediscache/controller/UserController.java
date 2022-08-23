@@ -1,11 +1,13 @@
 package cn.kingshin.rediscache.controller;
 
 
-
+import cn.hutool.core.bean.BeanUtil;
 import cn.kingshin.rediscache.dto.LoginFormDTO;
 import cn.kingshin.rediscache.dto.Result;
 import cn.kingshin.rediscache.dto.UserDTO;
+import cn.kingshin.rediscache.entity.User;
 import cn.kingshin.rediscache.entity.UserInfo;
+import cn.kingshin.rediscache.service.IBlogService;
 import cn.kingshin.rediscache.service.IUserInfoService;
 import cn.kingshin.rediscache.service.IUserService;
 import cn.kingshin.rediscache.utils.UserHolder;
@@ -28,7 +30,8 @@ public class UserController {
 
     @Resource
     private IUserService userService;
-
+    @Resource
+    private IBlogService blogService;
     @Resource
     private IUserInfoService userInfoService;
 
@@ -81,4 +84,22 @@ public class UserController {
         // 返回
         return Result.ok(info);
     }
+
+// UserController 根据id查询用户
+
+    @GetMapping("/{id}")
+    public Result queryUserById(@PathVariable("id") Long userId){
+        // 查询详情
+        User user = userService.getById(userId);
+        if (user == null) {
+            return Result.ok();
+        }
+        UserDTO userDTO = BeanUtil.copyProperties(user, UserDTO.class);
+        // 返回
+        return Result.ok(userDTO);
+    }
+
+
+
+
 }
