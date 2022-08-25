@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="分页和排序查询">
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="GEODemo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/ShopTypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/test/java/cn/kingshin/rediscache/RedisCacheApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/test/java/cn/kingshin/rediscache/RedisCacheApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,27 +54,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;MyBatisLogPluginindexNum&quot;: &quot;11493&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/User/下载/Alibaba.Java.Coding.Guidelines-2.1.1-fix-2022.1.zip&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2ea4d21cf8b86681b232bc383873c296&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "MyBatisLogPluginindexNum": "11537",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "D:/User/下载/Alibaba.Java.Coding.Guidelines-2.1.1-fix-2022.1.zip",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "2ea4d21cf8b86681b232bc383873c296"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -286,7 +283,7 @@
       <workItem from="1661324321493" duration="2456000" />
       <workItem from="1661337731310" duration="28000" />
       <workItem from="1661352731387" duration="7470000" />
-      <workItem from="1661404981339" duration="325000" />
+      <workItem from="1661404981339" duration="4206000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -463,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661244775794</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="GEODemo">
+      <created>1661405353300</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1661405353300</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +501,8 @@
     <MESSAGE value="redis分布式锁" />
     <MESSAGE value="redis多线程" />
     <MESSAGE value="分页和排序查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="分页和排序查询" />
+    <MESSAGE value="GEODemo" />
+    <option name="LAST_COMMIT_MESSAGE" value="GEODemo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
