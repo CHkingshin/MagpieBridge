@@ -8,16 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MP_Demo" />
-        <module name="common" />
-        <module name="redisCache" />
+        <module name="emall-admin" />
         <module name="COSApi" />
         <module name="disruptor" />
         <module name="mvc-config" />
-        <module name="model" />
         <module name="StreamEx" />
         <module name="redis-demo" />
+        <module name="emall-nacos-client" />
         <module name="service-order" />
         <module name="jediscloud" />
+        <module name="common" />
+        <module name="redisCache" />
+        <module name="model" />
         <module name="eamll-common" />
       </profile>
     </annotationProcessing>
@@ -27,6 +29,8 @@
       <module name="StreamEx" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="eamll-common" options="-parameters" />
+      <module name="emall-admin" options="-parameters" />
+      <module name="emall-nacos-client" options="-parameters" />
       <module name="model" options="-parameters" />
       <module name="mvc-config" options="-parameters" />
       <module name="redisCache" options="-parameters" />

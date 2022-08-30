@@ -14,7 +14,7 @@
     <packaging>jar</packaging>
 
     <!-- 模块名及描述信息 -->
-    <name>e-commerce-mvc-config</name>
+    <name>emall-mvc-config</name>
     <description>通用配置模块</description>
 
     <dependencies>

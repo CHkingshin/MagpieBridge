@@ -14,7 +14,7 @@
     <packaging>jar</packaging>
 
     <!-- 模块名及描述信息 -->
-    <name>e-commerce-common</name>
+    <name>emall-common</name>
     <description>通用模块</description>
 
     <properties>
