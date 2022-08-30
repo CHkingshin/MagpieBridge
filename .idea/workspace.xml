@@ -4,12 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="GEODemo">
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="bitMap">
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/src/main/java/cn/chihsien/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/src/main/java/cn/chihsien/vo/CommonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/src/main/java/cn/chihsien/vo/JwtToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/src/main/java/cn/chihsien/vo/LoginUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/src/main/java/cn/chihsien/vo/UsernameAndPassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/mvc-config/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/mvc-config/src/main/java/cn/chihsien/advice/CommonResponseDataAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/mvc-config/src/main/java/cn/chihsien/advice/GlobalExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/mvc-config/src/main/java/cn/chihsien/annotation/IgnoreResponseAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/mvc-config/src/main/java/cn/chihsien/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/java/cn/kingshin/rediscache/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redisCache/src/test/java/cn/kingshin/rediscache/RedisCacheApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisCache/src/test/java/cn/kingshin/rediscache/RedisCacheApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +38,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -57,7 +72,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "MyBatisLogPluginindexNum": "11537",
+    "MyBatisLogPluginindexNum": "11543",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -67,11 +82,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/User/下载/Alibaba.Java.Coding.Guidelines-2.1.1-fix-2022.1.zip",
-    "project.structure.last.edited": "模块",
+    "last_opened_file_path": "E:/SourceTreeRepository/github/MagpieBridge/ddd-emall-cloud1688/mvc-config/src/main/java/cn/chihsien",
+    "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "spring.configuration.checksum": "2ea4d21cf8b86681b232bc383873c296"
   }
 }]]></component>
@@ -83,11 +98,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\ddd-emall-cloud1688\mvc-config\src\main\java\cn\chihsien" />
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\ddd-emall-cloud1688\mvc-config\src\main\java\cn\chihsien\annotation" />
+      <recent name="E:\SourceTreeRepository\github\MagpieBridge\ddd-emall-cloud1688\eamll-common\src\main\java\cn\chihsien\vo" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\resources" />
       <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\java\cn\kingshin\rediscache\utils" />
-      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redisCache\src\main\java\cn\kingshin\rediscache" />
-      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\test\java\com\chihsien\redis" />
-      <recent name="E:\SourceTreeRepository\github\MagpieBridge\redis-demo\src\main\resources" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="cn.kingshin.rediscache.service.impl" />
@@ -152,6 +167,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedisCacheApplicationTests.testHLL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="redisCache" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.kingshin.rediscache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.kingshin.rediscache" />
+      <option name="MAIN_CLASS_NAME" value="cn.kingshin.rediscache.RedisCacheApplicationTests" />
+      <option name="METHOD_NAME" value="testHLL" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="disruptor" />
@@ -181,6 +212,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedisDemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="redis-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chihsien.redis.RedisDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RedisDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
       <option name="ACTIVE_PROFILES" />
       <module name="jediscloud" />
@@ -200,7 +238,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.RedisCacheApplicationTests.testHLL" />
       <item itemvalue="JUnit.RedisCacheApplicationTests.loadShopData" />
+      <item itemvalue="Spring Boot.RedisDemoApplication (1)" />
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Spring Boot.MpDemoApplication" />
       <item itemvalue="Spring Boot.RedisDemoApplication" />
@@ -211,6 +251,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisCacheApplicationTests.testHLL" />
         <item itemvalue="Spring Boot.RedisCacheApplication" />
         <item itemvalue="JUnit.RedisCacheApplicationTests.loadShopData" />
         <item itemvalue="应用程序.VavrDemo" />
@@ -283,7 +324,9 @@
       <workItem from="1661324321493" duration="2456000" />
       <workItem from="1661337731310" duration="28000" />
       <workItem from="1661352731387" duration="7470000" />
-      <workItem from="1661404981339" duration="4206000" />
+      <workItem from="1661404981339" duration="6054000" />
+      <workItem from="1661794192909" duration="277000" />
+      <workItem from="1661794485756" duration="3810000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -467,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661405353300</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="bitMap">
+      <created>1661409760126</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1661409760126</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +552,8 @@
     <MESSAGE value="redis多线程" />
     <MESSAGE value="分页和排序查询" />
     <MESSAGE value="GEODemo" />
-    <option name="LAST_COMMIT_MESSAGE" value="GEODemo" />
+    <MESSAGE value="bitMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="bitMap" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

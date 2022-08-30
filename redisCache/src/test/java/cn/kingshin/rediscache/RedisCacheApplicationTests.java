@@ -54,4 +54,27 @@ public class RedisCacheApplicationTests {
             stringRedisTemplate.opsForGeo().add(key,locations);
         }
     }
+
+/***
+ * @description
+ *        HLL模拟UV统计
+ * @return void
+ * @author KingShin
+ * @date 2022/8/25 14:57:59
+ */
+    @Test
+    void testHLL(){
+        String[] users = new String[1000];
+        int j = 0;
+
+        for (int i = 0; i <= 1000000 ; i++) {
+            j = i % 1000;
+            users[j] = "user_" +i;
+            if(j == 999){
+                stringRedisTemplate.opsForHyperLogLog().add("hll1",users);
+            }
+        }
+        Long size = stringRedisTemplate.opsForHyperLogLog().size("hll1");
+        System.out.println("size="+size);
+    }
 }
