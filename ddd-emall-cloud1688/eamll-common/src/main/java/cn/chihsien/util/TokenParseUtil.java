@@ -40,7 +40,7 @@ public class TokenParseUtil {
         // 返回 Token 中保存的用户信息
         return JSON.parseObject(
                 body.get(CommonConstant.JWT_USER_INFO_KEY).toString(),
-                LoginUserInfo.class
+                LoginUserInfo.class//反序列化
         );
     }
 

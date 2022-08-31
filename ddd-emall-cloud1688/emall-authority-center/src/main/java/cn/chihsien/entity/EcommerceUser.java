@@ -27,7 +27,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @EntityListeners(AuditingEntityListener.class)
-@Table(name = "t_emall_user")
+@Table(name = "t_ecommerce_user")
 public class EcommerceUser implements Serializable {
 
     /**
