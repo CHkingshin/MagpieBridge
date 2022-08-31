@@ -17,6 +17,7 @@
         <module name="emall-nacos-client" />
         <module name="service-order" />
         <module name="jediscloud" />
+        <module name="emall-authority-center" />
         <module name="common" />
         <module name="redisCache" />
         <module name="model" />
@@ -30,6 +31,7 @@
       <module name="common" options="-parameters" />
       <module name="eamll-common" options="-parameters" />
       <module name="emall-admin" options="-parameters" />
+      <module name="emall-authority-center" options="-parameters" />
       <module name="emall-nacos-client" options="-parameters" />
       <module name="model" options="-parameters" />
       <module name="mvc-config" options="-parameters" />

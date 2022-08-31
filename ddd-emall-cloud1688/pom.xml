@@ -12,6 +12,7 @@
         <module>mvc-config</module>
         <module>emall-nacos-client</module>
         <module>emall-admin</module>
+        <module>emall-authority-center</module>
     </modules>
     <packaging>pom</packaging>
 
