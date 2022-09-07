@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * <h1>配置登录请求转发规则</h1>
+ * <h1>代码配置登录请求转发规则</h1>
  *
  * @author KingShin
  */
@@ -19,14 +19,14 @@ public class RouteLocatorConfig {
     @Bean
     public RouteLocator loginRouteLocator(RouteLocatorBuilder builder) {
 
-        // 手动定义 Gateway 路由规则需要指定 id、path 和 uri
+        // 手动定义 Gateway 路由规则 需要指定 id、path 和 uri
         return builder.routes()
                 .route(
-                        "e_commerce_authority",
+                        "emall_authority",//全局唯一即可
                         r -> r.path(
-                                "/imooc/e-commerce/login",
-                                "/imooc/e-commerce/register"
-                        ).uri("http://localhost:9001/")
+                                "/imooc/emall/login",//拦截登录请求
+                                "/imooc/emall/register"//拦截注册请求
+                        ).uri("http://localhost:19001/")//将上面设置的请求向网关进行转发
                 ).build();
     }
 }

@@ -6,20 +6,31 @@
       <list>
         <option value="$PROJECT_DIR$/MagpieBridgeApi/pom.xml" />
         <option value="$PROJECT_DIR$/service/pom.xml" />
-        <option value="$PROJECT_DIR$/redis-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/redisCache/pom.xml" />
-        <option value="$PROJECT_DIR$/StreamEx/pom.xml" />
         <option value="$PROJECT_DIR$/ddd-emall-cloud1688/pom.xml" />
         <option value="$PROJECT_DIR$/shenyu/shenyu-admin/pom.xml" />
         <option value="$PROJECT_DIR$/shenyu/pom.xml" />
         <option value="$PROJECT_DIR$/shenyu/shenyu-examples/shenyu-examples-springcloud/pom.xml" />
+        <option value="$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/pom.xml" />
+        <option value="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/redisCache/pom.xml" />
+        <option value="$PROJECT_DIR$/StreamEx/pom.xml" />
+        <option value="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/pom.xml" />
+        <option value="$PROJECT_DIR$/ddd-emall-cloud1688/emall-admin/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/MagpieBridgeApi/COSApi/pom.xml" />
+        <option value="$PROJECT_DIR$/MagpieBridgeApi/DB/pom.xml" />
+        <option value="$PROJECT_DIR$/MagpieBridgeApi/disruptor/pom.xml" />
+        <option value="$PROJECT_DIR$/MagpieBridgeApi/jediscloud/pom.xml" />
         <option value="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway-shenyu/pom.xml" />
         <option value="$PROJECT_DIR$/ddd-emall-cloud1688/emall-nacos/pom.xml" />
         <option value="$PROJECT_DIR$/ddd-emall-cloud1688/emall-shenyu-gateway/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/service/common/pom.xml" />
+        <option value="$PROJECT_DIR$/service/model/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service-order/pom.xml" />
       </set>
     </option>
   </component>

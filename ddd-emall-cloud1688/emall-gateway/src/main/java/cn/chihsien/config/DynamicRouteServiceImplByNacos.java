@@ -18,7 +18,7 @@ import java.util.concurrent.Executor;
 
 /**
  * <h1>通过 nacos 下发动态路由配置, 监听 Nacos 中路由配置变更</h1>
- *
+ *  连接到nacos server 读取路由配置信息 ->解析成路由信息需要的对象->通过nacos service增加路由定义 ->配置监听器监听是否有修改
  * @author KingShin
  */
 @Slf4j

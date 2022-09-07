@@ -4,37 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="ddd 数据库表文档生成">
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="ddd 网关">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/maven_wrapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MagpieBridgeApi/COSApi/src/main/main4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MagpieBridgeApi/DB/src/main/main9.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MagpieBridgeApi/disruptor/src/main/main7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MagpieBridgeApi/jediscloud/src/main/main.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-admin/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/src/main/main6.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/conf/GatewayBeanConf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/DynamicRouteServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/DynamicRouteServiceImplByNacos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/GatewayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/RouteLocatorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/constant/GatewayConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/filter/GlobalCacheRequestBodyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/filter/GlobalElapsedLogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/filter/GlobalLoginOrRegisterFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/filter/HeaderTokenGatewayFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/filter/factory/HeaderTokenGatewayFilterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/main1.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/login.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/nacos-client.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/test/java/cn/chihsien/GatewayApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/test/java/cn/chihsien/service/PredicateTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-nacos-client/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc_e_commerce_ddd-emall-cloud1688_1.0.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/shenyu-bootstrap-error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/shenyu-bootstrap.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shenyu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MagpieBridge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MagpieBridge.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redisCache/src/main/main3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/src/main/java/cn/chihsien/constant/CommonConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/src/main/java/cn/chihsien/constant/CommonConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/conf/GatewayBeanConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/conf/GatewayBeanConf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/DynamicRouteServiceImplByNacos.java" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/DynamicRouteServiceImplByNacos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/RouteLocatorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/RouteLocatorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/login.http" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/login.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/nacos-client.http" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/nacos-client.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/shenyu-bootstrap-error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/shenyu-bootstrap.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shenyu" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,28 +108,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;MyBatisLogPluginindexNum&quot;: &quot;11543&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/SourceTreeRepository/github/MagpieBridge/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.44244605&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;73677b6172e83703abf93f0b39386569&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "MyBatisLogPluginindexNum": "11543",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/SourceTreeRepository/github/MagpieBridge/redis-demo/pom.xml",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.41416568",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "spring.configuration.checksum": "66010af117f0957fe1876ddf97f43cf1"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -169,57 +173,15 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
-    <configuration name="authority | 注册用户并返回 Token -- 注册功能实现" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/src/main/resources/http/authority.http" index="2" requestIdentifier="注册用户并返回 Token -- 注册功能实现" runType="运行单个请求">
+  <component name="RunManager" selected="Spring Boot.NacosClientApplication">
+    <configuration name="login | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/login.http" index="2" requestIdentifier="#2" runType="运行单个请求">
       <method v="2" />
     </configuration>
-    <configuration name="PredicateTest.testPredicateAnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="emall-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.chihsien.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.chihsien.service" />
-      <option name="MAIN_CLASS_NAME" value="cn.chihsien.service.PredicateTest" />
-      <option name="METHOD_NAME" value="testPredicateAnd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="login | 登录" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/login.http" requestIdentifier="登录" runType="运行单个请求">
+      <method v="2" />
     </configuration>
-    <configuration name="PredicateTest.testPredicateIsEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="emall-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.chihsien.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.chihsien.service" />
-      <option name="MAIN_CLASS_NAME" value="cn.chihsien.service.PredicateTest" />
-      <option name="METHOD_NAME" value="testPredicateIsEqual" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PredicateTest.testPredicateNegate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="emall-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.chihsien.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.chihsien.service" />
-      <option name="MAIN_CLASS_NAME" value="cn.chihsien.service.PredicateTest" />
-      <option name="METHOD_NAME" value="testPredicateNegate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="nacos-client | 查询服务" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/nacos-client.http" requestIdentifier="查询服务" runType="运行单个请求">
+      <method v="2" />
     </configuration>
     <configuration name="PredicateTest.testPredicateOr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="emall-gateway" />
@@ -336,10 +298,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP 请求.authority | 注册用户并返回 Token -- 注册功能实现" />
-      <item itemvalue="JUnit.PredicateTest.testPredicateAnd" />
-      <item itemvalue="JUnit.PredicateTest.testPredicateIsEqual" />
-      <item itemvalue="JUnit.PredicateTest.testPredicateNegate" />
+      <item itemvalue="HTTP 请求.login | #2" />
+      <item itemvalue="HTTP 请求.login | 登录" />
+      <item itemvalue="HTTP 请求.nacos-client | 查询服务" />
       <item itemvalue="JUnit.PredicateTest.testPredicateOr" />
       <item itemvalue="JUnit.PredicateTest.testPredicateTest" />
       <item itemvalue="Spring Boot.GatewayApplication" />
@@ -355,11 +316,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP 请求.nacos-client | 查询服务" />
+        <item itemvalue="HTTP 请求.login | 登录" />
+        <item itemvalue="HTTP 请求.login | #2" />
         <item itemvalue="JUnit.PredicateTest.testPredicateTest" />
         <item itemvalue="JUnit.PredicateTest.testPredicateOr" />
-        <item itemvalue="JUnit.PredicateTest.testPredicateNegate" />
-        <item itemvalue="JUnit.PredicateTest.testPredicateIsEqual" />
-        <item itemvalue="JUnit.PredicateTest.testPredicateAnd" />
       </list>
     </recent_temporary>
   </component>
@@ -441,7 +402,9 @@
       <workItem from="1662056520436" duration="3692000" />
       <workItem from="1662060992245" duration="3178000" />
       <workItem from="1662517924934" duration="166000" />
-      <workItem from="1662518114975" duration="406000" />
+      <workItem from="1662518114975" duration="14074000" />
+      <workItem from="1662539926383" duration="260000" />
+      <workItem from="1662540203784" duration="2712000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -660,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661970694877</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="ddd 网关">
+      <created>1662518549911</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1662518549911</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -704,7 +674,8 @@
     <MESSAGE value="ddd nacos2.0.4up and adminup" />
     <MESSAGE value="ddd 鉴权微服务 jwt公钥私钥" />
     <MESSAGE value="ddd 数据库表文档生成" />
-    <option name="LAST_COMMIT_MESSAGE" value="ddd 数据库表文档生成" />
+    <MESSAGE value="ddd 网关" />
+    <option name="LAST_COMMIT_MESSAGE" value="ddd 网关" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

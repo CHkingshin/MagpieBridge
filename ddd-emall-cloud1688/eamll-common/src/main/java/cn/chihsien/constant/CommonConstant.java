@@ -2,7 +2,9 @@ package cn.chihsien.constant;
 
 /**
  * <h1>通用模块常量定义</h1>
- * */
+ *
+ * @author KingShin
+ */
 public final class CommonConstant {
 
     /** RSA 公钥 */

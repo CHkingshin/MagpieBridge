@@ -7,28 +7,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MP_Demo" />
         <module name="emall-admin" />
-        <module name="COSApi" />
-        <module name="disruptor" />
         <module name="mvc-config" />
         <module name="StreamEx" />
-        <module name="redis-demo" />
         <module name="emall-nacos-client" />
-        <module name="service-order" />
-        <module name="jediscloud" />
+        <module name="redis-demo" />
         <module name="emall-authority-center" />
-        <module name="common" />
         <module name="redisCache" />
         <module name="emall-gateway" />
-        <module name="model" />
         <module name="eamll-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="COSApi" target="1.8" />
+      <module name="disruptor" target="1.8" />
       <module name="emall-gateway-shenyu" target="1.8" />
       <module name="emall-shenyu-gateway" target="1.8" />
       <module name="emall-shenyu-gateway-admin" target="1.8" />
+      <module name="jediscloud" target="1.8" />
+      <module name="model" target="1.8" />
+      <module name="MP_Demo" target="1.8" />
+      <module name="service-order" target="1.8" />
       <module name="shenyu" target="1.8" />
       <module name="shenyu-admin" target="1.8" />
       <module name="shenyu-admin-dist" target="1.8" />

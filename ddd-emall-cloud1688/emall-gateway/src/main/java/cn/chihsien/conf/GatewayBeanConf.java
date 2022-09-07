@@ -6,10 +6,10 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * <h1>网关需要注入到容器中的 Bean</h1>
- * */
+ * @author KingShin
+ */
 @Configuration
 public class GatewayBeanConf {
-
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
