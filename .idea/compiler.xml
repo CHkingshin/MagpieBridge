@@ -20,10 +20,194 @@
         <module name="emall-authority-center" />
         <module name="common" />
         <module name="redisCache" />
+        <module name="emall-gateway" />
         <module name="model" />
         <module name="eamll-common" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="emall-gateway-shenyu" target="1.8" />
+      <module name="emall-shenyu-gateway" target="1.8" />
+      <module name="emall-shenyu-gateway-admin" target="1.8" />
+      <module name="shenyu" target="1.8" />
+      <module name="shenyu-admin" target="1.8" />
+      <module name="shenyu-admin-dist" target="1.8" />
+      <module name="shenyu-alert" target="1.8" />
+      <module name="shenyu-bootstrap" target="1.8" />
+      <module name="shenyu-bootstrap-dist" target="1.8" />
+      <module name="shenyu-client" target="1.8" />
+      <module name="shenyu-client-alibaba-dubbo" target="1.8" />
+      <module name="shenyu-client-apache-dubbo" target="1.8" />
+      <module name="shenyu-client-core" target="1.8" />
+      <module name="shenyu-client-dubbo" target="1.8" />
+      <module name="shenyu-client-dubbo-common" target="1.8" />
+      <module name="shenyu-client-grpc" target="1.8" />
+      <module name="shenyu-client-http" target="1.8" />
+      <module name="shenyu-client-motan" target="1.8" />
+      <module name="shenyu-client-sofa" target="1.8" />
+      <module name="shenyu-client-spring-websocket" target="1.8" />
+      <module name="shenyu-client-springcloud" target="1.8" />
+      <module name="shenyu-client-springmvc" target="1.8" />
+      <module name="shenyu-client-tars" target="1.8" />
+      <module name="shenyu-client-websocket" target="1.8" />
+      <module name="shenyu-common" target="1.8" />
+      <module name="shenyu-disruptor" target="1.8" />
+      <module name="shenyu-dist" target="1.8" />
+      <module name="shenyu-docker-compose-dist" target="1.8" />
+      <module name="shenyu-examples-springcloud" target="1.8" />
+      <module name="shenyu-loadbalancer" target="1.8" />
+      <module name="shenyu-plugin" target="1.8" />
+      <module name="shenyu-plugin-alibaba-dubbo" target="1.8" />
+      <module name="shenyu-plugin-apache-dubbo" target="1.8" />
+      <module name="shenyu-plugin-api" target="1.8" />
+      <module name="shenyu-plugin-base" target="1.8" />
+      <module name="shenyu-plugin-cache" target="1.8" />
+      <module name="shenyu-plugin-cache-handler" target="1.8" />
+      <module name="shenyu-plugin-cache-memory" target="1.8" />
+      <module name="shenyu-plugin-cache-redis" target="1.8" />
+      <module name="shenyu-plugin-cache-spi" target="1.8" />
+      <module name="shenyu-plugin-context-path" target="1.8" />
+      <module name="shenyu-plugin-cryptor" target="1.8" />
+      <module name="shenyu-plugin-divide" target="1.8" />
+      <module name="shenyu-plugin-dubbo" target="1.8" />
+      <module name="shenyu-plugin-dubbo-common" target="1.8" />
+      <module name="shenyu-plugin-general-context" target="1.8" />
+      <module name="shenyu-plugin-global" target="1.8" />
+      <module name="shenyu-plugin-grpc" target="1.8" />
+      <module name="shenyu-plugin-httpclient" target="1.8" />
+      <module name="shenyu-plugin-hystrix" target="1.8" />
+      <module name="shenyu-plugin-jwt" target="1.8" />
+      <module name="shenyu-plugin-logging" target="1.8" />
+      <module name="shenyu-plugin-logging-aliyun-sls" target="1.8" />
+      <module name="shenyu-plugin-logging-common" target="1.8" />
+      <module name="shenyu-plugin-logging-console" target="1.8" />
+      <module name="shenyu-plugin-logging-elasticsearch" target="1.8" />
+      <module name="shenyu-plugin-logging-kafka" target="1.8" />
+      <module name="shenyu-plugin-logging-pulsar" target="1.8" />
+      <module name="shenyu-plugin-logging-rocketmq" target="1.8" />
+      <module name="shenyu-plugin-logging-tencent-cls" target="1.8" />
+      <module name="shenyu-plugin-metrics" target="1.8" />
+      <module name="shenyu-plugin-mock" target="1.8" />
+      <module name="shenyu-plugin-modify-response" target="1.8" />
+      <module name="shenyu-plugin-motan" target="1.8" />
+      <module name="shenyu-plugin-mqtt" target="1.8" />
+      <module name="shenyu-plugin-oauth2" target="1.8" />
+      <module name="shenyu-plugin-param-mapping" target="1.8" />
+      <module name="shenyu-plugin-ratelimiter" target="1.8" />
+      <module name="shenyu-plugin-redirect" target="1.8" />
+      <module name="shenyu-plugin-request" target="1.8" />
+      <module name="shenyu-plugin-resilience4j" target="1.8" />
+      <module name="shenyu-plugin-response" target="1.8" />
+      <module name="shenyu-plugin-rewrite" target="1.8" />
+      <module name="shenyu-plugin-sentinel" target="1.8" />
+      <module name="shenyu-plugin-sign" target="1.8" />
+      <module name="shenyu-plugin-sofa" target="1.8" />
+      <module name="shenyu-plugin-springcloud" target="1.8" />
+      <module name="shenyu-plugin-tars" target="1.8" />
+      <module name="shenyu-plugin-uri" target="1.8" />
+      <module name="shenyu-plugin-waf" target="1.8" />
+      <module name="shenyu-plugin-websocket" target="1.8" />
+      <module name="shenyu-protocol" target="1.8" />
+      <module name="shenyu-protocol-grpc" target="1.8" />
+      <module name="shenyu-protocol-mqtt" target="1.8" />
+      <module name="shenyu-register-center" target="1.8" />
+      <module name="shenyu-register-client" target="1.8" />
+      <module name="shenyu-register-client-api" target="1.8" />
+      <module name="shenyu-register-client-consul" target="1.8" />
+      <module name="shenyu-register-client-etcd" target="1.8" />
+      <module name="shenyu-register-client-http" target="1.8" />
+      <module name="shenyu-register-client-nacos" target="1.8" />
+      <module name="shenyu-register-client-server" target="1.8" />
+      <module name="shenyu-register-client-server-api" target="1.8" />
+      <module name="shenyu-register-client-server-consul" target="1.8" />
+      <module name="shenyu-register-client-server-etcd" target="1.8" />
+      <module name="shenyu-register-client-server-nacos" target="1.8" />
+      <module name="shenyu-register-client-server-zookeeper" target="1.8" />
+      <module name="shenyu-register-client-zookeeper" target="1.8" />
+      <module name="shenyu-register-common" target="1.8" />
+      <module name="shenyu-register-instance" target="1.8" />
+      <module name="shenyu-register-instance-api" target="1.8" />
+      <module name="shenyu-register-instance-consul" target="1.8" />
+      <module name="shenyu-register-instance-core" target="1.8" />
+      <module name="shenyu-register-instance-etcd" target="1.8" />
+      <module name="shenyu-register-instance-nacos" target="1.8" />
+      <module name="shenyu-register-instance-zookeeper" target="1.8" />
+      <module name="shenyu-spi" target="1.8" />
+      <module name="shenyu-spring-boot-starter" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client-alibaba-dubbo" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client-apache-dubbo" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client-common" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client-grpc" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client-motan" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client-sofa" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client-spring-websocket" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client-springcloud" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client-springmvc" target="1.8" />
+      <module name="shenyu-spring-boot-starter-client-tars" target="1.8" />
+      <module name="shenyu-spring-boot-starter-gateway" target="1.8" />
+      <module name="shenyu-spring-boot-starter-instance" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-alibaba-dubbo" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-apache-dubbo" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-cache" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-context-path" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-cryptor" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-divide" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-dubbo" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-dubbo-common" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-general-context" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-global" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-grpc" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-httpclient" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-hystrix" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-jwt" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-logging-aliyun-sls" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-logging-console" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-logging-elasticsearch" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-logging-kafka" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-logging-pulsar" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-logging-rocketmq" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-logging-tencent-cls" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-metrics" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-mock" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-modify-response" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-motan" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-mqtt" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-oauth2" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-param-mapping" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-ratelimiter" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-redirect" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-request" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-resilience4j" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-response" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-rewrite" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-sentinel" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-sign" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-sofa" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-springcloud" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-tars" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-uri" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-waf" target="1.8" />
+      <module name="shenyu-spring-boot-starter-plugin-websocket" target="1.8" />
+      <module name="shenyu-spring-boot-starter-sync-data-center" target="1.8" />
+      <module name="shenyu-spring-boot-starter-sync-data-consul" target="1.8" />
+      <module name="shenyu-spring-boot-starter-sync-data-etcd" target="1.8" />
+      <module name="shenyu-spring-boot-starter-sync-data-http" target="1.8" />
+      <module name="shenyu-spring-boot-starter-sync-data-nacos" target="1.8" />
+      <module name="shenyu-spring-boot-starter-sync-data-websocket" target="1.8" />
+      <module name="shenyu-spring-boot-starter-sync-data-zookeeper" target="1.8" />
+      <module name="shenyu-src-dist" target="1.8" />
+      <module name="shenyu-sync-data-api" target="1.8" />
+      <module name="shenyu-sync-data-center" target="1.8" />
+      <module name="shenyu-sync-data-consul" target="1.8" />
+      <module name="shenyu-sync-data-etcd" target="1.8" />
+      <module name="shenyu-sync-data-http" target="1.8" />
+      <module name="shenyu-sync-data-nacos" target="1.8" />
+      <module name="shenyu-sync-data-websocket" target="1.8" />
+      <module name="shenyu-sync-data-zookeeper" target="1.8" />
+      <module name="shenyu-web" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -32,12 +216,16 @@
       <module name="eamll-common" options="-parameters" />
       <module name="emall-admin" options="-parameters" />
       <module name="emall-authority-center" options="-parameters" />
+      <module name="emall-gateway" options="-parameters" />
+      <module name="emall-gateway-shenyu" options="-parameters" />
       <module name="emall-nacos-client" options="-parameters" />
+      <module name="emall-shenyu-gateway-admin" options="" />
       <module name="model" options="-parameters" />
       <module name="mvc-config" options="-parameters" />
       <module name="redisCache" options="-parameters" />
       <module name="service" options="" />
       <module name="service-order" options="-parameters" />
+      <module name="shenyu-examples-springcloud" options="-parameters" />
     </option>
   </component>
 </project>

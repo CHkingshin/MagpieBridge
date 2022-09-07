@@ -10,11 +10,16 @@
         <option value="$PROJECT_DIR$/redisCache/pom.xml" />
         <option value="$PROJECT_DIR$/StreamEx/pom.xml" />
         <option value="$PROJECT_DIR$/ddd-emall-cloud1688/pom.xml" />
+        <option value="$PROJECT_DIR$/shenyu/shenyu-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/shenyu/pom.xml" />
+        <option value="$PROJECT_DIR$/shenyu/shenyu-examples/shenyu-examples-springcloud/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway-shenyu/pom.xml" />
         <option value="$PROJECT_DIR$/ddd-emall-cloud1688/emall-nacos/pom.xml" />
+        <option value="$PROJECT_DIR$/ddd-emall-cloud1688/emall-shenyu-gateway/untitled/pom.xml" />
       </set>
     </option>
   </component>
