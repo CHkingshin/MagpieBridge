@@ -7,14 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="emall-service-config" />
+        <module name="emall-account-service" />
+        <module name="redisCache" />
+        <module name="emall-gateway" />
         <module name="emall-admin" />
         <module name="mvc-config" />
         <module name="StreamEx" />
-        <module name="emall-nacos-client" />
         <module name="redis-demo" />
+        <module name="emall-nacos-client" />
+        <module name="emall-service-sdk" />
         <module name="emall-authority-center" />
-        <module name="redisCache" />
-        <module name="emall-gateway" />
         <module name="eamll-common" />
       </profile>
     </annotationProcessing>
@@ -214,11 +217,14 @@
       <module name="StreamEx" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="eamll-common" options="-parameters" />
+      <module name="emall-account-service" options="-parameters" />
       <module name="emall-admin" options="-parameters" />
       <module name="emall-authority-center" options="-parameters" />
       <module name="emall-gateway" options="-parameters" />
       <module name="emall-gateway-shenyu" options="-parameters" />
       <module name="emall-nacos-client" options="-parameters" />
+      <module name="emall-service-config" options="-parameters" />
+      <module name="emall-service-sdk" options="-parameters" />
       <module name="emall-shenyu-gateway-admin" options="" />
       <module name="model" options="-parameters" />
       <module name="mvc-config" options="-parameters" />

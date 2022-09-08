@@ -1,0 +1,14 @@
+### 查询服务实例信息
+GET http://127.0.0.1:18081/eamll-nacos-client/nacos-client/service-instance
+Accept: application/json
+
+### 动态从 Nacos Server 中获取配置信息
+GET http://127.0.0.1:8000/ecommerce-nacos-client/nacos-client/project-config
+Accept: application/json
+
+### 查看 Sleuth 跟踪信息
+GET http://127.0.0.1:19001/imooc/emall-nacos-client/sleuth/trace-info
+Accept: application/json
+emall-user: eyJhbGciOiJSUzI1NiJ9.eyJlbWFsbC11c2VyIjoie1wiaWRcIjoxMCxcInVzZXJuYW1lXCI6XCJjaGloc2llbkBmb3guY29tXCJ9IiwianRpIjoiZTYzNGNkMDItNDY4NS00NjI4LWI0MDQtYmNlNTI0OTAxMmNlIiwiZXhwIjoxNjYyNjUyODAwfQ.g0_vTM9xGMDtwA5lx-uNYQ7jbJkrQKSc1c4iKsB5pync6PWVIWlZoET8GBq0c209hYQalA6tAmd7pND3uPm70OPgR_vWf7Dtqb9eDyMMQrG_k7R2YZc92bTzUs6cTyMQOO0m0qc2TGqt-t021hqxCbGp1Y81fpPXtSd8yuhibnSci0NGodWmOpZSXlBApcnFg9AMXiD538LxvR9eJxXJ2vnylVU8LtUuO4KaeOkeeqpph5GB6Mq5s-pxlTGFPPWYZmoWTtVUJvBKijkYh0fsqZT-Le28JlPN7sLn2_FKplqOJ5SXgUQyIoD3Beg5fV3I8ckjNOubXiEPXTiUA_1TXw
+token: imooc
+

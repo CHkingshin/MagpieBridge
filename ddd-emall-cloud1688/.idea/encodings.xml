@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../../../ServiceCore/Repository/repository_boot/org/springframework/boot/spring-boot-starter-parent/2.3.12.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eamll-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emall-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emall-authority-center/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emall-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emall-nacos-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emall-service/emall-account-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emall-service/emall-service-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emall-service/emall-service-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emall-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/emall-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mvc-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

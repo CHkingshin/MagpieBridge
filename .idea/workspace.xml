@@ -5,40 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="ddd 网关">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/maven_wrapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MagpieBridgeApi/COSApi/src/main/main4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MagpieBridgeApi/DB/src/main/main9.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MagpieBridgeApi/disruptor/src/main/main7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MagpieBridgeApi/jediscloud/src/main/main.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-admin/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/src/main/main6.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/constant/GatewayConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/filter/GlobalCacheRequestBodyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/filter/GlobalElapsedLogFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/filter/GlobalLoginOrRegisterFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/filter/HeaderTokenGatewayFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/filter/factory/HeaderTokenGatewayFilterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/main1.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-nacos-client/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisCache/src/main/main3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/src/main/java/cn/chihsien/constant/CommonConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/eamll-common/src/main/java/cn/chihsien/constant/CommonConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/conf/GatewayBeanConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/conf/GatewayBeanConf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/DynamicRouteServiceImplByNacos.java" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/DynamicRouteServiceImplByNacos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/RouteLocatorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java/cn/chihsien/config/RouteLocatorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/login.http" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/login.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/nacos-client.http" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/http/nacos-client.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/shenyu-bootstrap-error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/shenyu-bootstrap.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shenyu" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,28 +83,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "MyBatisLogPluginindexNum": "11543",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/SourceTreeRepository/github/MagpieBridge/redis-demo/pom.xml",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.41416568",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "spring.configuration.checksum": "66010af117f0957fe1876ddf97f43cf1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;MyBatisLogPluginindexNum&quot;: &quot;11543&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/SourceTreeRepository/github/MagpieBridge/ddd-emall-cloud1688/pom.xml&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41416568&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f2973cfe84849ef599e7ea341a8c1b4f&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -211,6 +186,14 @@
       <option name="MAIN_CLASS_NAME" value="cn.chihsien.service.PredicateTest" />
       <option name="METHOD_NAME" value="testPredicateTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="emall-account-service" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.AccountApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -297,12 +280,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/redis-demo/.mvn/wrapper" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="HTTP 请求.login | #2" />
       <item itemvalue="HTTP 请求.login | 登录" />
       <item itemvalue="HTTP 请求.nacos-client | 查询服务" />
       <item itemvalue="JUnit.PredicateTest.testPredicateOr" />
       <item itemvalue="JUnit.PredicateTest.testPredicateTest" />
+      <item itemvalue="Spring Boot.AccountApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.AuthorityCenterApplication" />
       <item itemvalue="Spring Boot.RedisDemoApplication (1)" />
@@ -404,7 +398,10 @@
       <workItem from="1662517924934" duration="166000" />
       <workItem from="1662518114975" duration="14074000" />
       <workItem from="1662539926383" duration="260000" />
-      <workItem from="1662540203784" duration="2712000" />
+      <workItem from="1662540203784" duration="3309000" />
+      <workItem from="1662543541061" duration="448000" />
+      <workItem from="1662543999869" duration="1589000" />
+      <workItem from="1662545647794" duration="959000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -630,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662518549911</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="ddd 网关">
+      <created>1662542935524</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1662542935524</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

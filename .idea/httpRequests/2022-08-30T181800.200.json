@@ -1,0 +1,19 @@
+[
+  {
+    "serviceId": "emall-nacos-client",
+    "host": "192.168.1.2",
+    "port": 18081,
+    "secure": false,
+    "metadata": {
+      "nacos.instanceId": null,
+      "nacos.weight": "1.0",
+      "nacos.cluster": "DEFAULT",
+      "nacos.ephemeral": "true",
+      "nacos.healthy": "true",
+      "preserved.register.source": "SPRING_CLOUD"
+    },
+    "uri": "http://192.168.1.2:18081",
+    "scheme": null,
+    "instanceId": null
+  }
+]

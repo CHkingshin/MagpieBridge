@@ -25,6 +25,11 @@
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <version>2.2.8.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>2.2.8.RELEASE</version>
+        </dependency>
         <!--支持web全栈式开发，内置tomcat和springmvc的开发所需，同时依赖了springboot的启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -1,0 +1,186 @@
+POST http://127.0.0.1:19001/imooc/emall/login
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+###
+
+POST http://127.0.0.1:19001/imooc/emall/login
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+###
+
+POST http://127.0.0.1:19001/imooc/emall/login
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+###
+
+GET http://127.0.0.1:19001/imooc/eamll-nacos-client/nacos-client/service-instance?serviceId=emall-gateway
+Accept: application/json
+emall-user: eyJhbGciOiJSUzI1NiJ9.eyJlbWFsbC11c2VyIjoie1wiaWRcIjoxMixcInVzZXJuYW1lXCI6XCJjaGloc2llbkAxNjMuY29tXCJ9IiwianRpIjoiMGRlZjc4MzQtOTU5ZS00Y2Q4LTg2NmEtODFiMmM4OTM3OTc4IiwiZXhwIjoxNjYyNTY2NDAwfQ.hSz-901DuOl1ggpduHOgge3yR9yIRsFzNt2x0B7nYsmCWoqmjF_VOsnhdqJp5X4xS4H-u2EKNHIh560P_0NMrzBiur7QFFGqLfQkd79pzD1gnf2glyUhqaogPlv2dVz2PXP8YVys6Wybu5YT18Y_MI5Zx1u--g1tAizdeKeXcX63vFicFlf3LQQu-tBz0QLpEQBMc0b7l9X6R9WgTJbF1kQZ7OSPzKMW4Fl5VjOkK_GQjC_YW7Rf_RrGXgIj1Gtx2OkLedjExXFyDWFij0Arzz2_EaZl1RJy3CwJa2jAl8YetG0qLAbL9YvdRZVCCLf2jpfvuNgM2fOdxi4oo0cfhA
+token: imooc
+
+<> 2022-09-07T161549.404.json
+
+###
+
+POST http://127.0.0.1:19001/imooc/emall/register
+Content-Type: application/json
+
+{
+  "username": "chihsien@163.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+###
+
+POST http://127.0.0.1:19001/imooc/emall/login
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+###
+
+POST http://127.0.0.1:19001/imooc/emall/login
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+###
+
+POST http://127.0.0.1:19001/imooc/emall/login
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+<> 2022-09-07T160404.500.json
+
+###
+
+POST http://127.0.0.1:17002/emall-authority-center/authority/register
+Content-Type: application/json
+
+{
+  "username": "chihsien1@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+<> 2022-09-01T003424.200.json
+
+###
+
+POST http://127.0.0.1:17002/emall-authority-center/authority/register
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+<> 2022-09-01T003416.200.json
+
+###
+
+POST http://127.0.0.1:17002/emall-authority-center/authority/token
+Content-Type: application/json
+
+{
+  "username": "chihsien1@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+<> 2022-09-01T003317.200.json
+
+###
+
+POST http://127.0.0.1:17002/emall-authority-center/authority/register
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+<> 2022-09-01T003307.200.json
+
+###
+
+POST http://127.0.0.1:17002/emall-authority-center/authority/token
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+<> 2022-09-01T003237.200.json
+
+###
+
+POST http://127.0.0.1:17002/ecommerce-authority-center/authority/token
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+<> 2022-09-01T003220.404.html
+
+###
+
+POST http://127.0.0.1:17002/ecommerce-authority-center/authority/token
+Content-Type: application/json
+
+{
+  "username": "chihsien@fox.com",
+  "password": "25d55ad283aa400af464c76d713c07ad"
+}
+
+<> 2022-09-01T003053.404.html
+
+###
+
+GET http://127.0.0.1:18081/eamll-nacos-client/nacos-client/service-instance
+Accept: application/json
+
+<> 2022-08-30T181800.200.json
+
+###
+
+GET http://127.0.0.1:18081/emall-nacos-client/nacos-client/service-instance
+Accept: application/json
+
+<> 2022-08-30T181044.404.html
+
+###
+
+GET http://127.0.0.1:18081/emall-nacos-client/nacos-client/service-instance
+Accept: application/json
+
+<> 2022-08-30T181029.404.html
+
+###
+
