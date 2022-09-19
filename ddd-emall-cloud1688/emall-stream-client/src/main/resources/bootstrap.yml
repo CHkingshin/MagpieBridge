@@ -21,7 +21,7 @@ spring:
       # SpringCloud Stream + Kafka
       kafka:
         binder:
-          brokers: 43.142.37.192:9092
+          brokers: 127.0.0.1:9092
           auto-create-topics: true  # 如果设置为false, 就不会自动创建Topic, 你在使用之前需要手动创建好
       # SpringCloud Stream + RocketMQ
       #      rocketmq:
@@ -61,7 +61,7 @@ spring:
 
   # spring-kafka 的配置
   kafka:
-    bootstrap-servers: 43.142.37.192:9092
+    bootstrap-servers: 127.0.0.1:9092
     producer:
       retries: 3
     consumer:
@@ -75,7 +75,7 @@ spring:
   zipkin:
     sender:
       type: kafka # 默认是 http
-    base-url: http://43.142.37.192:9411/
+    base-url: http://127.0.0.1:9411/
 
 # 暴露端点
 management:

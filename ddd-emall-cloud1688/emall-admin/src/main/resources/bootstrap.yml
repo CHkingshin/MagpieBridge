@@ -14,7 +14,7 @@ spring:
     nacos:
       discovery:
         enabled: true
-        server-addr: 43.142.37.192:8848
+        server-addr: 127.0.0.1:8848
         namespace: 8fa06f13-96a0-41fb-bf5b-fb1b714d1e97
         username: nacos
         password: nacos
