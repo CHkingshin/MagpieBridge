@@ -19,9 +19,11 @@
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway-shenyu/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-hystrix-dashboard/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-nacos-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-nacos/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-service/emall-account-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-service/emall-goods-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-service/emall-service-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-service/emall-service-sdk/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-service/src/main/java" charset="UTF-8" />
@@ -29,6 +31,8 @@
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-shenyu-gateway/emall-shenyu-gateway-admin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-shenyu-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-shenyu-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-stream-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/emall-study-ecommerce/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/mvc-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/shenyu/shenyu-admin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ddd-emall-cloud1688/shenyu/shenyu-admin/src/main/resources" charset="UTF-8" />

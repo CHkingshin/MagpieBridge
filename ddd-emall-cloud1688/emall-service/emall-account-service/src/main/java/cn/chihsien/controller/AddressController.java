@@ -14,23 +14,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 /**
  * <h1>用户地址服务 Controller</h1>
- * */
+ *
+ * @author KingShin
+ */
 @Api(tags = "用户地址服务")
 @Slf4j
 @RestController
 @RequestMapping("/address")
 public class AddressController {
 
-    private final IAddressService addressService;
+    @Resource
+    private IAddressService addressService;
 
-    public AddressController(IAddressService addressService) {
-        this.addressService = addressService;
-    }
-
-    // value 是简述, notes 是详细的描述信息
-    @ApiOperation(value = "创建", notes = "创建用户地址信息", httpMethod = "POST")
+    @ApiOperation(value = "创建", notes = "创建用户地址信息", httpMethod = "POST")// value 是简述, notes 是详细的描述信息
     @PostMapping("/create-address")
     public TableId createAddressInfo(@RequestBody AddressInfo addressInfo) {
         return addressService.createAddressInfo(addressInfo);

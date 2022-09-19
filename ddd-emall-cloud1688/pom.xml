@@ -15,6 +15,9 @@
         <module>emall-authority-center</module>
         <module>emall-gateway</module>
         <module>emall-service</module>
+        <module>emall-hystrix-dashboard</module>
+        <module>emall-stream-client</module>
+        <module>emall-study-ecommerce</module>
     </modules>
     <packaging>pom</packaging>
 

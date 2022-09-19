@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 
 /**
  * <h1>扣减商品库存</h1>
- * */
+ *
+ * @author KingShin
+ */
 @ApiModel(description = "扣减商品库存对象")
 @Data
 @NoArgsConstructor

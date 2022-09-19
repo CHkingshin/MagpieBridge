@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/redisCache/pom.xml" />
         <option value="$PROJECT_DIR$/StreamEx/pom.xml" />
         <option value="$PROJECT_DIR$/ddd-emall-cloud1688/pom.xml" />
+        <option value="$PROJECT_DIR$/ddd-emall-cloud1688/emall-stream-client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

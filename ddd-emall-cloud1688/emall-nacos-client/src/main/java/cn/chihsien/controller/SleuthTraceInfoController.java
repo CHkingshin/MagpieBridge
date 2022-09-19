@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <h1>打印跟踪信息</h1>
- *
- * @author KingShin
- */
+ * */
 @Slf4j
 @RestController
 @RequestMapping("/sleuth")
@@ -24,7 +22,7 @@ public class SleuthTraceInfoController {
 
     /**
      * <h2>打印日志跟踪信息</h2>
-     */
+     * */
     @GetMapping("/trace-info")
     public void logCurrentTraceInfo() {
         traceInfoService.logCurrentTraceInfo();

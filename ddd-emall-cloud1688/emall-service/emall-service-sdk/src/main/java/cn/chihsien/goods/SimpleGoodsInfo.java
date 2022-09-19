@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 
 /**
  * <h1>简单的商品信息: 封面</h1>
- * */
+ *  进主页分类看见的商品卡片信息 简单的展示商品信息
+ * @author KingShin
+ */
 @ApiModel(description = "简单的商品信息")
 @Data
 @NoArgsConstructor

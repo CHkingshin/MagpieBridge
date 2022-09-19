@@ -13,7 +13,7 @@
     <packaging>jar</packaging>
 
     <!-- 模块名及描述信息 -->
-    <name>e-commerce-service-config</name>
+    <name>emall-service-config</name>
     <description>服务通用配置</description>
 
     <dependencies>

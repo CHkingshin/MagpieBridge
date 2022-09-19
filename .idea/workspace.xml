@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="ddd 网关">
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="userService start">
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-admin/src/main/resources/bootstrap.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/src/main/resources/bootstrap.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-nacos-client/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-service/emall-account-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -102,7 +100,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.41416568&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f2973cfe84849ef599e7ea341a8c1b4f&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;6e45c22bc2e92b29ae1a93d5519be668&quot;
   }
 }</component>
   <component name="ReactorSettings">
@@ -205,6 +203,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="emall-study-ecommerce" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthorityCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="emall-authority-center" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.AuthorityCenterApplication" />
@@ -224,6 +230,22 @@
       <module name="emall-gateway" />
       <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoodsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="emall-goods-service" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.GoodsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixDashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="emall-hystrix-dashboard" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.HystrixDashboardApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -274,6 +296,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StreamClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="emall-stream-client" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chihsien.StreamClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
       <method v="2">
@@ -296,6 +326,10 @@
       <item itemvalue="HTTP 请求.nacos-client | 查询服务" />
       <item itemvalue="JUnit.PredicateTest.testPredicateOr" />
       <item itemvalue="JUnit.PredicateTest.testPredicateTest" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.GoodsApplication" />
+      <item itemvalue="Spring Boot.HystrixDashboardApplication" />
+      <item itemvalue="Spring Boot.StreamClientApplication" />
       <item itemvalue="Spring Boot.AccountApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.AuthorityCenterApplication" />
@@ -402,6 +436,9 @@
       <workItem from="1662543541061" duration="448000" />
       <workItem from="1662543999869" duration="1589000" />
       <workItem from="1662545647794" duration="959000" />
+      <workItem from="1662662210349" duration="394000" />
+      <workItem from="1662924969366" duration="633000" />
+      <workItem from="1663166103855" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -634,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662542935524</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="userService start">
+      <created>1662662564271</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1662662564271</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -679,7 +723,8 @@
     <MESSAGE value="ddd 鉴权微服务 jwt公钥私钥" />
     <MESSAGE value="ddd 数据库表文档生成" />
     <MESSAGE value="ddd 网关" />
-    <option name="LAST_COMMIT_MESSAGE" value="ddd 网关" />
+    <MESSAGE value="userService start" />
+    <option name="LAST_COMMIT_MESSAGE" value="userService start" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

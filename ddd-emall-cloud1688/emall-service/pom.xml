@@ -14,6 +14,7 @@
         <module>emall-service-config</module>
         <module>emall-service-sdk</module>
         <module>emall-account-service</module>
+        <module>emall-goods-service</module>
     </modules>
     <packaging>pom</packaging>
 

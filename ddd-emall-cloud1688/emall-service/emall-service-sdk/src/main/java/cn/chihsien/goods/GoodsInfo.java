@@ -10,7 +10,9 @@ import java.util.Date;
 
 /**
  * <h1>商品信息</h1>
- * */
+ *
+ * @author KingShin
+ */
 @ApiModel(description = "详细的商品信息")
 @Data
 @NoArgsConstructor
@@ -58,7 +60,8 @@ public class GoodsInfo {
 
     /**
      * <h2>商品属性</h2>
-     * */
+     * 开始套娃 对象取中取中取 绝对不直接暴露每一个基本类型信息 只返回对象
+     */
     @ApiModel(description = "商品属性对象")
     @Data
     @NoArgsConstructor

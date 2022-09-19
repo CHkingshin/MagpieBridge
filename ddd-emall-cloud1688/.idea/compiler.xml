@@ -8,13 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="emall-service-config" />
-        <module name="emall-account-service" />
         <module name="emall-admin" />
-        <module name="emall-gateway" />
+        <module name="emall-hystrix-dashboard" />
         <module name="mvc-config" />
         <module name="emall-nacos-client" />
-        <module name="emall-service-sdk" />
+        <module name="emall-stream-client" />
         <module name="emall-authority-center" />
+        <module name="emall-study-ecommerce" />
+        <module name="emall-goods-service" />
+        <module name="emall-account-service" />
+        <module name="emall-gateway" />
+        <module name="emall-service-sdk" />
         <module name="eamll-common" />
       </profile>
     </annotationProcessing>
@@ -26,10 +30,14 @@
       <module name="emall-admin" options="-parameters" />
       <module name="emall-authority-center" options="-parameters" />
       <module name="emall-gateway" options="-parameters" />
+      <module name="emall-goods-service" options="-parameters" />
+      <module name="emall-hystrix-dashboard" options="-parameters" />
       <module name="emall-nacos-client" options="-parameters" />
       <module name="emall-service" options="" />
       <module name="emall-service-config" options="-parameters" />
       <module name="emall-service-sdk" options="-parameters" />
+      <module name="emall-stream-client" options="-parameters" />
+      <module name="emall-study-ecommerce" options="-parameters" />
       <module name="mvc-config" options="-parameters" />
     </option>
   </component>

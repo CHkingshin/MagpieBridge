@@ -13,7 +13,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <h1>用于余额相关服务接口实现</h1>
- * */
+ *
+ * @author KingShin
+ */
 @Slf4j
 @Service
 @Transactional(rollbackFor = Exception.class)
@@ -24,17 +26,25 @@ public class BalanceServiceImpl implements IBalanceService {
     public BalanceServiceImpl(EcommerceBalanceDao balanceDao) {
         this.balanceDao = balanceDao;
     }
-
+    /**
+     * @description
+     *        获取当前用户余额信息 如果没有 则创建一个新的余额记录进表 余额数为0
+     * @return cn.chihsien.account.BalanceInfo
+     * @author KingShin
+     * @date 2022/9/10
+     */
     @Override
     public BalanceInfo getCurrentUserBalanceInfo() {
 
         LoginUserInfo loginUserInfo = AccessContext.getLoginUserInfo();
         BalanceInfo balanceInfo = new BalanceInfo(
+                //第一次登录
                 loginUserInfo.getId(), 0L
         );
 
         EcommerceBalance ecommerceBalance =
                 balanceDao.findByUserId(loginUserInfo.getId());
+
         if (null != ecommerceBalance) {
             balanceInfo.setBalance(ecommerceBalance.getBalance());
         } else {
@@ -48,15 +58,22 @@ public class BalanceServiceImpl implements IBalanceService {
 
         return balanceInfo;
     }
-
+    /**
+     * @description  扣除当前用户余额
+     * @param balanceInfo
+     * @return cn.chihsien.account.BalanceInfo
+     * @author KingShin
+     * @date 2022/9/10
+     */
     @Override
     public BalanceInfo deductBalance(BalanceInfo balanceInfo) {
 
         LoginUserInfo loginUserInfo = AccessContext.getLoginUserInfo();
 
-        // 扣减用户余额的一个基本原则: 扣减额 <= 当前用户余额
+        // 扣减用户余额的一个基本原则: 扣减额 <= 当前用户余额 实际业务中应该判断是否是同一个用户
         EcommerceBalance ecommerceBalance =
                 balanceDao.findByUserId(loginUserInfo.getId());
+        //当前表余额不为空 且表里的余额-需要扣减的钱 < 0 则抛错
         if (null == ecommerceBalance
                 || ecommerceBalance.getBalance() - balanceInfo.getBalance() < 0
         ) {
@@ -66,6 +83,7 @@ public class BalanceServiceImpl implements IBalanceService {
         Long sourceBalance = ecommerceBalance.getBalance();
         ecommerceBalance.setBalance(ecommerceBalance.getBalance() - balanceInfo.getBalance());
         log.info("deduct balance: [{}], [{}], [{}]",
+                //ecommerceBalance  原来的余额   扣减的余额
                 balanceDao.save(ecommerceBalance).getId(), sourceBalance,
                 balanceInfo.getBalance());
 

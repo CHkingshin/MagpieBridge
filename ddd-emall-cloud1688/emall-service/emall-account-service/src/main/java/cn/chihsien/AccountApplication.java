@@ -7,8 +7,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 /**
  * <h1>用户账户微服务启动入口</h1>
- * 127.0.0.1:8003/emall-account-service/swagger-ui.html
- * 127.0.0.1:8003/emall-account-service/doc.html
+ * 127.0.0.1:18003/emall-account-service/swagger-ui.html  原生的
+ * 127.0.0.1:18003/emall-account-service/doc.html   带美化的
  *
  * @author KingShin
  */

@@ -57,7 +57,13 @@ public class AddressServiceImpl implements IAddressService {
                 ids.stream().map(TableId.Id::new).collect(Collectors.toList())
         );
     }
-
+    /**
+     * @description
+     *        获取当前用户的地址信息
+     * @return cn.chihsien.account.AddressInfo
+     * @author KingShin
+     * @date 2022/9/10 00:56:27
+     */
     @Override
     public AddressInfo getCurrentAddressInfo() {
 
@@ -73,10 +79,16 @@ public class AddressServiceImpl implements IAddressService {
 
         return new AddressInfo(loginUserInfo.getId(), addressItems);
     }
-
+    /**
+     * @description 按 ID 获取地址信息
+     * @param id
+     * @return cn.chihsien.account.AddressInfo
+     * @author KingShin
+     * @date 2022/9/10 01:04:18
+     */
     @Override
     public AddressInfo getAddressInfoById(Long id) {
-
+        //findById返回的是Optional对象 需要做操作：orElse：存在则返回值 如果不存在值，则返回的值可以为 null
         EcommerceAddress ecommerceAddress = addressDao.findById(id).orElse(null);
         if (null == ecommerceAddress) {
             throw new RuntimeException("address is not exist");
@@ -87,7 +99,13 @@ public class AddressServiceImpl implements IAddressService {
                 Collections.singletonList(ecommerceAddress.toAddressItem())
         );
     }
-
+    /**
+     * @description 按表 ID 获取地址信息
+     * @param tableId
+     * @return cn.chihsien.account.AddressInfo
+     * @author KingShin
+     * @date 2022/9/10 01:04:31
+     */
     @Override
     public AddressInfo getAddressInfoByTableId(TableId tableId) {
 
@@ -99,12 +117,13 @@ public class AddressServiceImpl implements IAddressService {
         if (CollectionUtils.isEmpty(ecommerceAddresses)) {
             return new AddressInfo(-1L, Collections.emptyList());
         }
-
+        //实体类 --> 值对象
         List<AddressInfo.AddressItem> addressItems = ecommerceAddresses.stream()
                 .map(EcommerceAddress::toAddressItem)
                 .collect(Collectors.toList());
 
         return new AddressInfo(
+                //第一个参数userId 第二个参数addressItems
                 ecommerceAddresses.get(0).getUserId(), addressItems
         );
     }
