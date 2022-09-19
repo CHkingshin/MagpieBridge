@@ -1,0 +1,92 @@
+server:
+  port: 17002
+  servlet:
+    context-path: /emall-authority-center
+
+spring:
+  application:
+    name: emall-authority-center
+  cloud:
+    nacos:
+      discovery:
+        enabled: true # 如果不想使用 Nacos 进行服务注册和发现, 设置为 false 即可
+        server-addr: 43.142.37.192:8848
+        # server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850 # Nacos 服务器地址
+        namespace: 8fa06f13-96a0-41fb-bf5b-fb1b714d1e97
+#        username: nacos
+#        password: nacos
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+      # 配置管理
+      config:
+        prefix: ddd-emall
+        file-extension: yaml  # 配置内容的数据格式, 默认为 properties
+        enabled: true     # 如果不想使用 Nacos 进行配置管理, 设置为 false 即可
+        group: DEFAULT_GROUP  # 组, 默认为 DEFAULT_GROUP
+        namespace: 8fa06f13-96a0-41fb-bf5b-fb1b714d1e97
+        server-addr: 43.142.37.192:8848
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.show_sql: true
+      hibernate.format_sql: true
+    open-in-view: false
+  datasource:
+    # 数据源
+    url: jdbc:mysql://43.142.37.192:3306/imooc_e_commerce?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    # 连接池
+    hikari:
+      maximum-pool-size: 8
+      minimum-idle: 4
+      idle-timeout: 30000
+      connection-timeout: 30000
+      max-lifetime: 45000
+      auto-commit: true
+      pool-name: ImoocEcommerceHikariCP
+  kafka:
+    bootstrap-servers: 43.142.37.192:9092
+    producer:
+      #尝试发送3次
+      retries: 3
+    consumer:
+      auto-offset-reset: latest
+  sleuth:
+    sampler:
+      # ProbabilityBasedSampler 抽样策略
+      probability: 1.0  # 采样比例, 1.0 表示 100%, 默认是 0.1
+      # RateLimitingSampler 抽样策略, 设置了限速采集, spring.sleuth.sampler.probability 属性值无效
+      rate: 100  # 每秒间隔接受的 trace 量
+  zipkin:
+    sender:
+      type: kafka # 默认是 web
+    base-url: http://43.142.37.192:9411/
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+#shenyu:
+#  client:
+#    registerType: http
+#    serverLists: http://localhost:9095
+#    props:
+#      contextPath: /http
+#      appName: http
+#      isFull: true
+## registerType : 服务注册类型，请参考应用客户端接入文档
+## serverList: 服务列表，请参考应用客户端接入文档
+## contextPath: 为你的项目在shenyu网关的路由前缀。 比如/order ，/product 等等，网关会根据你的这个前缀来进行路由。
+## appName：你的应用名称，不配置的话，会默认取application 中的名称
+## isFull: 设置true 代表代理你的整个服务，false表示代理你其中某几个controller
