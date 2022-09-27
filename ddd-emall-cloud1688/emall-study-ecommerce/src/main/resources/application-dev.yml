@@ -1,12 +1,12 @@
 server:
   port: 8001
   servlet:
-    context-path: /imooc-study-ecommerce-dev
+    context-path: /emall-study-ecommerce-dev
 
 spring:
   # SpringBoot 集成 Kafka 的配置, 最低配置只需要配置 spring.kafka.bootstrap-servers
   kafka:
-    bootstrap-servers: 127.0.0.1:9092
+    bootstrap-servers: 192.168.52.128:9092
   jpa:
     show-sql: true
     hibernate:
@@ -17,7 +17,7 @@ spring:
     open-in-view: false
   datasource:
     # 数据源
-    url: jdbc:mysql://127.0.0.1:3306/imooc_qinyi_study_springboot?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://192.168.52.128:3306/imooc_qinyi_study_springboot?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: root
     type: com.zaxxer.hikari.HikariDataSource
@@ -43,7 +43,7 @@ spring:
 
 # RocketMQ 的配置, 这是最低配置
 rocketmq:
-  name-server: 127.0.0.1:9876
+  name-server: 192.168.52.128:9876
   producer:
     # 发送同一类消息的设置为同一个 group, 保证唯一
     group: emall-study-ecommerce

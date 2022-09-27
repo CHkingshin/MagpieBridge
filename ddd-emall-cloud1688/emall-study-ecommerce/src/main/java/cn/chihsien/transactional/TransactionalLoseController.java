@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <h1>TransactionalLose Controller</h1>
- * */
+ *
+ * @author KingShin
+ */
 @Slf4j
 @RestController
 @RequestMapping("/transactional-lose")

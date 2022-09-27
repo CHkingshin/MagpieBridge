@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="userService start">
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-admin/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-authority-center/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-nacos-client/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddd-emall-cloud1688/emall-service/emall-account-service/src/main/resources/bootstrap.yml" afterDir="false" />
+    <list default="true" id="b28a7a60-21c5-4a00-aed6-642aaca8d74f" name="变更" comment="MQ">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +94,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.41416568&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6e45c22bc2e92b29ae1a93d5519be668&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;b06f36f704afe7fdbd293d42bec928d3&quot;
   }
 }</component>
   <component name="ReactorSettings">
@@ -439,6 +433,8 @@
       <workItem from="1662662210349" duration="394000" />
       <workItem from="1662924969366" duration="633000" />
       <workItem from="1663166103855" duration="10000" />
+      <workItem from="1663564461526" duration="389000" />
+      <workItem from="1663564916061" duration="489000" />
     </task>
     <task id="LOCAL-00001" summary="jedis bug fix">
       <created>1658348507774</created>
@@ -678,7 +674,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662662564271</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="MQ">
+      <created>1663564560352</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1663564560352</updated>
+    </task>
+    <task id="LOCAL-00036" summary="MQ">
+      <created>1663564734001</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1663564734001</updated>
+    </task>
+    <task id="LOCAL-00037" summary="MQ">
+      <created>1663565390490</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1663565390490</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -724,7 +741,8 @@
     <MESSAGE value="ddd 数据库表文档生成" />
     <MESSAGE value="ddd 网关" />
     <MESSAGE value="userService start" />
-    <option name="LAST_COMMIT_MESSAGE" value="userService start" />
+    <MESSAGE value="MQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="MQ" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

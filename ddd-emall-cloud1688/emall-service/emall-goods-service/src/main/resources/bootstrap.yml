@@ -10,14 +10,14 @@ spring:
     nacos:
       discovery:
         enabled: true # 如果不想使用 Nacos 进行服务注册和发现, 设置为 false 即可
-        server-addr: 127.0.0.1:8848
+        server-addr: 192.168.52.128:8848
         # server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850 # Nacos 服务器地址
         namespace: 8fa06f13-96a0-41fb-bf5b-fb1b714d1e97
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
   kafka:
-    bootstrap-servers: 127.0.0.1:9092
+    bootstrap-servers: 192.168.52.128:9092
     producer:
       retries: 3
     consumer:
@@ -28,7 +28,7 @@ spring:
   zipkin:
     sender:
       type: kafka # 默认是 http
-    base-url: http://127.0.0.1:9411/
+    base-url: http://192.168.52.128:9411/
   jpa:
     show-sql: true
     hibernate:
@@ -39,23 +39,24 @@ spring:
     open-in-view: false
   datasource:
     # 数据源
-    url: jdbc:mysql://127.0.0.1:3306/imooc_e_commerce?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://192.168.52.128:3306/imooc_e_commerce?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: root
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
     # 连接池
     hikari:
-      maximum-pool-size: 8
-      minimum-idle: 4
-      idle-timeout: 30000
-      connection-timeout: 30000
-      max-lifetime: 45000
+      maximum-pool-size: 10
+      minimum-idle: 10
+      idle-timeout: 60000
+      connection-timeout: 60000
+      validation-timeout: 3000
+      max-lifetime: 450000
       auto-commit: true
       pool-name: ImoocCouponHikariCP
   redis:
     database: 0
-    host: 127.0.0.1
+    host: 192.168.52.128
     port: 6379
     password: kingshinredis
     # 连接超时时间
@@ -70,3 +71,5 @@ management:
   endpoint:
     health:
       show-details: always
+seata:
+  tx-service-group: ddd-emall

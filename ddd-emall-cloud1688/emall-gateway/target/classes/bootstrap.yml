@@ -23,7 +23,7 @@ spring:
   #          predicates: # 断言, 路径相匹配的进行路由
   #            - Path=/user/{id}
   kafka:
-    bootstrap-servers: 43.142.37.192:9092
+    bootstrap-servers: 192.168.52.128:9092
     producer:
       #尝试发送3次
       retries: 3
@@ -32,7 +32,7 @@ spring:
   zipkin:
     sender:
       type: kafka # 默认是 web
-    base-url: http://43.142.37.192:9411/
+    base-url: http://192.168.52.128:9411/
   main:
     allow-bean-definition-overriding: true  # 因为将来会引入很多依赖, 难免有重名的 bean
 

@@ -31,7 +31,6 @@ public class BalanceServiceImpl implements IBalanceService {
      *        获取当前用户余额信息 如果没有 则创建一个新的余额记录进表 余额数为0
      * @return cn.chihsien.account.BalanceInfo
      * @author KingShin
-     * @date 2022/9/10
      */
     @Override
     public BalanceInfo getCurrentUserBalanceInfo() {

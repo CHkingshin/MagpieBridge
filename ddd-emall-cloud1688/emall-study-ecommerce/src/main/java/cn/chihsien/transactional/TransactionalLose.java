@@ -20,12 +20,12 @@ public class TransactionalLose {
         this.springBootUserRepository = springBootUserRepository;
     }
 
-//    @Transactional
+      //@Transactional
     @Transactional(rollbackFor = Exception.class)
     public void wrongRollbackFor() throws Exception {
 
         JpaSpringBootUser springBootUser = new JpaSpringBootUser();
-        springBootUser.setUsername("ImoocQinyi-2021-01-01");
+        springBootUser.setUsername("ImoocQinyi-2022-01-01");
         springBootUserRepository.save(springBootUser);
 
         // ....

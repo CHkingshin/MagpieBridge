@@ -18,6 +18,7 @@
         <module>emall-hystrix-dashboard</module>
         <module>emall-stream-client</module>
         <module>emall-study-ecommerce</module>
+        <module>emall-sentinel-client</module>
     </modules>
     <packaging>pom</packaging>
 

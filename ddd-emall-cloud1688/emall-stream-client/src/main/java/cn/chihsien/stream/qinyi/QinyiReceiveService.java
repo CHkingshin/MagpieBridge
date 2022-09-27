@@ -9,7 +9,8 @@ import org.springframework.messaging.handler.annotation.Payload;
 
 /**
  * <h1>使用自定义的输入信道实现消息的接收</h1>
- * */
+ *
+ * @author KingShin*/
 @Slf4j
 @EnableBinding(QinyiSink.class)
 public class QinyiReceiveService {

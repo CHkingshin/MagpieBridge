@@ -13,11 +13,14 @@
         <module name="mvc-config" />
         <module name="emall-nacos-client" />
         <module name="emall-stream-client" />
+        <module name="emall-sentinel-client" />
         <module name="emall-authority-center" />
         <module name="emall-study-ecommerce" />
         <module name="emall-goods-service" />
         <module name="emall-account-service" />
+        <module name="emall-order-service" />
         <module name="emall-gateway" />
+        <module name="emall-logistics-service" />
         <module name="emall-service-sdk" />
         <module name="eamll-common" />
       </profile>
@@ -32,7 +35,10 @@
       <module name="emall-gateway" options="-parameters" />
       <module name="emall-goods-service" options="-parameters" />
       <module name="emall-hystrix-dashboard" options="-parameters" />
+      <module name="emall-logistics-service" options="-parameters" />
       <module name="emall-nacos-client" options="-parameters" />
+      <module name="emall-order-service" options="-parameters" />
+      <module name="emall-sentinel-client" options="-parameters" />
       <module name="emall-service" options="" />
       <module name="emall-service-config" options="-parameters" />
       <module name="emall-service-sdk" options="-parameters" />

@@ -1,0 +1,20 @@
+### 创建订单
+POST http://127.0.0.1:19001/imooc/emall-order-service/order/create-order
+Content-Type: application/json
+Accept: application/json
+emall-user: eyJhbGciOiJSUzI1NiJ9.eyJlbWFsbC11c2VyIjoie1wiaWRcIjoxLFwidXNlcm5hbWVcIjpcImNoaWhzaWVuQGZveC5jb21cIn0iLCJqdGkiOiI5NTY2Mjc3NC0yZGViLTQ1Y2MtODc4Ni1jNTBhNjRjMzUyZmMiLCJleHAiOjE2NjM5NDg4MDB9.PEq2ENcri4ccfk6X3b4hiDyIwiMYD7vtTPZiKjRI-mtxrQa0mC5GNnkPOZ8e7EEGHar49ft55LL1EEPh5rmEo-w18mG3OcqyVbn5_6lfaIfEBi6L-Qt_vR4vhHNWhloqpfCK_qfh2hyC43nmy4QGize6WVa2UzxMPsOwVTJvnPECikHSOvUTf5-2RVqeTxCXMeuxT5Q1Vk0tzsdjaFZVYyhPH77HS6imaLnWQTqUBLWKcMDp1bVUYoEs0w8MOmpJPYGQd16m1XGCPm9Q1mfzjcBOh0yYlmh8luh4gt7aR2-0tGuCZ_h4WeqLxnKDrbOa4EANxy6ojj_V2YKPf1TuNA
+
+{
+  "userAddress": 1,
+  "orderItems": [
+    {
+      "goodsId": 2,
+      "count": 5
+    }
+  ]
+}
+
+### 查询订单
+GET http://127.0.0.1:19001/imooc/emall-order-service/order/order-detail?page=2
+Accept: application/json
+emall-user: eyJhbGciOiJSUzI1NiJ9.eyJlbWFsbC11c2VyIjoie1wiaWRcIjoxLFwidXNlcm5hbWVcIjpcImNoaWhzaWVuQGZveC5jb21cIn0iLCJqdGkiOiI5NTY2Mjc3NC0yZGViLTQ1Y2MtODc4Ni1jNTBhNjRjMzUyZmMiLCJleHAiOjE2NjM5NDg4MDB9.PEq2ENcri4ccfk6X3b4hiDyIwiMYD7vtTPZiKjRI-mtxrQa0mC5GNnkPOZ8e7EEGHar49ft55LL1EEPh5rmEo-w18mG3OcqyVbn5_6lfaIfEBi6L-Qt_vR4vhHNWhloqpfCK_qfh2hyC43nmy4QGize6WVa2UzxMPsOwVTJvnPECikHSOvUTf5-2RVqeTxCXMeuxT5Q1Vk0tzsdjaFZVYyhPH77HS6imaLnWQTqUBLWKcMDp1bVUYoEs0w8MOmpJPYGQd16m1XGCPm9Q1mfzjcBOh0yYlmh8luh4gt7aR2-0tGuCZ_h4WeqLxnKDrbOa4EANxy6ojj_V2YKPf1TuNA

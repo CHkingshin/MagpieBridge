@@ -9,14 +9,16 @@ import org.springframework.stereotype.Component;
 
 /**
  * <h1>自定义从 Message 中提取 partition key 的策略</h1>
- * */
+ *
+ * @author KingShin
+ */
 @Slf4j
 @Component
 public class QinyiPartitionKeyExtractorStrategy implements PartitionKeyExtractorStrategy {
 
     @Override
     public Object extractKey(Message<?> message) {
-
+        //格式转化
         QinyiMessage qinyiMessage = JSON.parseObject(
                 message.getPayload().toString(), QinyiMessage.class
         );

@@ -31,7 +31,7 @@ public class DefaultSendService {
         log.info("in DefaultSendService send message: [{}]", _message);
 
         // 基于Spring Messaging模块实现, 目的是统一消息的编程模型, 是 Stream 组件的重要组成部分之一
-            source.output().send(MessageBuilder.withPayload(_message).build());
+        source.output().send(MessageBuilder.withPayload(_message).build());
 
 
     }

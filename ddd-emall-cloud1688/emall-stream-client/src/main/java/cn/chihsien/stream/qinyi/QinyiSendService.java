@@ -8,7 +8,9 @@ import org.springframework.messaging.support.MessageBuilder;
 
 /**
  * <h1>使用自定义的通信信道 QinyiSource 实现消息的发送</h1>
- * */
+ *
+ * @author KingShin
+ */
 @Slf4j
 @EnableBinding(QinyiSource.class)
 public class QinyiSendService {
@@ -21,7 +23,7 @@ public class QinyiSendService {
 
     /**
      * <h2>使用自定义的输出信道发送消息</h2>
-     * */
+     */
     public void sendMessage(QinyiMessage message) {
 
         String _message = JSON.toJSONString(message);
